@@ -6,9 +6,6 @@ export const BodyDiv = styled.div`
 background: url(${homeImage}) no-repeat;
 overflow: hidden;
 background-size: cover;
-/* width: 100%; */
 height: 100vh;
 background-position: center center;
-
-
 `
