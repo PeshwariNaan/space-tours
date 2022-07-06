@@ -2,36 +2,44 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const NavContainer = styled.div`
-  display: grid;
   position: fixed;
-  width: 100%;
-  margin-top: 5rem;
-  height: 10rem;
-  background-color: transparent;
+  margin-top: 10rem;
   z-index: 900;
-  grid-template-columns: repeat(16 1fr);
+  width: 100%;
+  height: 10.5rem;
+  display: grid;
+  grid-template-columns: minmax(15rem, 20rem) 1fr min-content;
+  grid-template-areas: 'logo image nav';
+  background-color: transparent;
 `;
 
 export const LogoContainer = styled.div`
-  grid-column: 1;
-  align-self: center;
-  margin-left: 3rem;
+  grid-area: logo;
+  height: 100%;
+  width: 100px;
+  padding-top: 2.5rem;
+  padding-left: 5rem;
+  background-size: 20px 30px;
+  justify-self: end;
 `;
 
-export const CenterContainer = styled.div`
-  display: grid;
-  grid-column-start: 3;
-  grid-column-end: 8;
-  grid-template-columns: repeat(2, 1fr);
+export const HLineContainer = styled.div`
+  grid-area: image;
+  height: 100%;
+  width: 100%;
+  padding-left: 3rem;
+  align-content: center;
 `;
 
 export const LinkContainer = styled.div`
-  grid-column-start: 9;
-  grid-column-end: 15;
+  grid-area: nav;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-self: center;
-  
+  width: 100%;
+  grid-template-columns: repeat(4, minmax(20rem, 30rem));
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
 `;
 
 export const NavLink = styled(Link)`
@@ -42,6 +50,7 @@ export const NavLink = styled(Link)`
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
+  justify-self: end;
 `;
 
 export const TestLink = styled.h2`
@@ -51,11 +60,12 @@ export const TestLink = styled.h2`
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
+  justify-self: end;
 `;
 
 export const CustomHr = styled.hr`
-  grid-column-start: 1;
-  grid-column-end: 3;
-  border: 1px solid #ffffff;
-  align-self: center;
+  margin-top: 5rem;
+  width: 100%;
+  border: 2px solid;
+  color: rgba(255, 255, 255, 0.25);
 `;

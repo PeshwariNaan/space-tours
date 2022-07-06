@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Outlet } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import {
-  CenterContainer,
+  HLineContainer,
   CustomHr,
   LinkContainer,
   LogoContainer,
@@ -18,9 +18,9 @@ const Navbar = () => {
         <LogoContainer>
           <Logo className="logo" />
         </LogoContainer>
-        <CenterContainer>
+        <HLineContainer>
           <CustomHr />
-        </CenterContainer>
+        </HLineContainer>
         <LinkContainer>
           <TestLink> HOME </TestLink>
           <TestLink> DESTINATIONS </TestLink>
