@@ -1,8 +1,10 @@
-
+import { BodyDiv } from "./tech.styles"
 
 const TechPage = () => {
   return (
-    <div style={{color: 'black'}}> This is the TechPage</div>
+    <BodyDiv>  
+    
+   </BodyDiv>
   )
 }
 

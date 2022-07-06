@@ -1,8 +1,10 @@
-
+import { BodyDiv } from "./destinations.styles"
 
 const DestinationsPage = () => {
   return (
-    <div style={{color: 'black'}}>This is the Destinations Page</div>
+    <BodyDiv>  
+    
+   </BodyDiv>
   )
 }
 

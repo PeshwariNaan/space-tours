@@ -1,7 +1,11 @@
-
+import { BodyDiv } from "./crew.styles";
 
 const CrewPage = () => {
-  return <div style={{ color: 'black' }}>This is the crew page!</div>;
+  return (
+  <BodyDiv>  
+    
+   </BodyDiv>
+  )
 };
 
 export default CrewPage;

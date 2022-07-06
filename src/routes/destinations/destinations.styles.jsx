@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import crewImage from '../../assets/background-crew-desktop.jpg'
+import destImage from '../../assets/background-destination-desktop.jpg'
 
 
 export const BodyDiv = styled.div`
-background: url(${crewImage}) no-repeat;
+background: url(${destImage}) no-repeat;
 overflow: hidden;
 background-size: cover;
 height: 100vh;
