@@ -7,25 +7,24 @@ import {
   LinkContainer,
   LogoContainer,
   NavContainer,
-  // NavLink,
-  TestLink,
+  NavLink,
 } from './nav.styles';
 
 const Navbar = () => {
   return (
     <Fragment>
       <NavContainer>
-        <LogoContainer>
-          <Logo className="logo" />
+        <LogoContainer to={'/'}>
+          <Logo />
         </LogoContainer>
         <HLineContainer>
           <CustomHr />
         </HLineContainer>
         <LinkContainer>
-          <TestLink> HOME </TestLink>
-          <TestLink> DESTINATIONS </TestLink>
-          <TestLink> CREW </TestLink>
-          <TestLink> TECHNOLOGY </TestLink>
+          <NavLink to={'/'}>00 HOME</NavLink>
+          <NavLink to={'/destinations'}>01 DESTINATIONS</NavLink>
+          <NavLink to={'/crew'}>02 CREW</NavLink>
+          <NavLink to={'/technology'}>03 TECHNOLOGY</NavLink>
         </LinkContainer>
       </NavContainer>
       <Outlet />

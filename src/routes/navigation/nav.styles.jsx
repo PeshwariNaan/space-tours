@@ -35,16 +35,16 @@ export const LinkContainer = styled.div`
   grid-area: nav;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, minmax(20rem, 30rem));
-  justify-content: flex-end;
+  grid-template-columns: repeat(4, minmax(25rem, 35rem));
+  justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
 `;
 
 export const NavLink = styled(Link)`
   margin: 0 2rem;
-  font-family: 'Bellefair';
+  font-family: 'Barlow Condensed';
   font-size: 1.6rem;
   letter-spacing: 0.27rem;
   color: #ffffff;
@@ -54,13 +54,15 @@ export const NavLink = styled(Link)`
 `;
 
 export const TestLink = styled.h2`
-  font-family: 'Bellefair';
-  font-size: 1.6rem;
-  letter-spacing: 0.27rem;
+  margin-left: 3rem;
+  display: inline-flex;
+  font-family: 'Barlow Condensed';
+  font-size: 1.4rem;
+  letter-spacing: 0.23rem;
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
-  justify-self: end;
+  justify-self: center;
 `;
 
 export const CustomHr = styled.hr`
@@ -68,4 +70,12 @@ export const CustomHr = styled.hr`
   width: 100%;
   border: 2px solid;
   color: rgba(255, 255, 255, 0.25);
+`;
+
+export const TitleNumbers = styled.h2`
+  display: inline-flex;
+  font-family: 'Barlow Condensed';
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #ffffff;
 `;
