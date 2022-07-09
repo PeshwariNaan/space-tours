@@ -1,18 +1,20 @@
 import {
   BodyDiv,
   HomeContainer,
-  TestDiv,
+  TextDiv,
   HomeTextDiv,
   HomeHeading5,
   HomeHeading1,
   HomeBodyText,
+  ButtonDiv,
 } from './home.styles';
+import HomeButton from '../../components/home-button/home-button.component';
 
 const Home = () => {
   return (
     <BodyDiv>
       <HomeContainer>
-        <TestDiv>
+        <TextDiv>
           <HomeTextDiv>
             <HomeHeading5>SO, YOU WANT TO TRAVEL TO </HomeHeading5>
             <HomeHeading1>SPACE</HomeHeading1>
@@ -23,7 +25,10 @@ const Home = () => {
               this world experience!
             </HomeBodyText>
           </HomeTextDiv>
-        </TestDiv>
+        </TextDiv>
+        <ButtonDiv>
+          <HomeButton><h2>EXPLORE</h2></HomeButton>
+        </ButtonDiv>
       </HomeContainer>
     </BodyDiv>
   );
