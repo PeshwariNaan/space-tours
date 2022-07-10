@@ -50,7 +50,7 @@ export const NavLink = styled(Link)`
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
-  justify-self: end;
+  justify-self: center;
 `;
 
 export const TestLink = styled.h2`
