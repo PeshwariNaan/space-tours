@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const BigRoundButton = styled.button`
-    height: 25rem;
-    width: 25rem;
+    height: 20rem;
+    width: 20rem;
     font-family: 'Bellefair';
+    font-size: 1.6rem;
+    letter-spacing: .475rem;
     background-color: #ffffff;
     cursor: pointer;
     color: black;
@@ -12,6 +14,6 @@ export const BigRoundButton = styled.button`
     text-align: center;
 
     :hover {
-        outline: 10rem solid #7F7A7A;
+        outline: 8rem solid #222222;
     }
 `

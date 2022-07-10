@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import homeImage from '../../assets/background-home-desktop.jpg';
+
 
 export const BodyDiv = styled.div`
-  background: url(${homeImage}) no-repeat;
+  background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446748/space_tours/Home/background-home-desktop_r7snbq.jpg)
+    no-repeat;
   overflow: hidden;
   background-size: cover;
   height: 100vh;
@@ -55,8 +56,7 @@ export const HomeBodyText = styled.p`
 `;
 
 export const ButtonDiv = styled.div`
-grid-column: 2 / 3;
-grid-row: 2;
-place-self: center;
-
-`
+  grid-column: 2 / 3;
+  grid-row: 2;
+  place-self: center;
+`;
