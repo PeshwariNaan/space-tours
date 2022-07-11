@@ -31,8 +31,9 @@ export const HomeTextDiv = styled.div`
 `;
 
 export const HomeHeading1 = styled.h1`
-  font-family: 'Bellefair';
+  font-family: 'Lora';
   font-size: 15rem;
+  text-transform: uppercase;
   color: #ffffff;
   margin-top: 0;
   margin-bottom: 0;
@@ -40,6 +41,7 @@ export const HomeHeading1 = styled.h1`
 
 export const HomeHeading5 = styled.h5`
   font-family: 'Barlow Condensed';
+  font-weight: 300;
   font-size: 2.8rem;
   color: #d0d6f9;
   letter-spacing: 0.475rem;

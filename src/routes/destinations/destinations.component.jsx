@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import {
   BodyDiv,
   MainDiv,
@@ -7,9 +9,14 @@ import {
   PlanetImageContainer,
   MenuContainer,
   PlanetSelect,
+  PlanetInfoContainer,
 } from './destinations.styles';
+import DestinationText from '../../components/destination-textbox/destination-textbox.component';
+import planetdata from '../../planetData';
 
 const DestinationsPage = () => {
+  const [index, setIndex] = useState(0)
+
   return (
     <BodyDiv>
       <MainDiv>
@@ -19,16 +26,24 @@ const DestinationsPage = () => {
         </PageTitleContainer>
         <PlanetImageContainer>
           <img
-            src="https://res.cloudinary.com/soyousay/image/upload/v1657446587/space_tours/Destinations/image-moon_mdz89x.webp"
-            alt="moon-img"
+            src={planetdata[index].planetImg}
+            alt={planetdata[index].alt}
           />
         </PlanetImageContainer>
         <MenuContainer>
-          <PlanetSelect>moon</PlanetSelect>
-          <PlanetSelect>mars</PlanetSelect>
-          <PlanetSelect>europa</PlanetSelect>
-          <PlanetSelect>titan</PlanetSelect>
+          <PlanetSelect onClick={() => setIndex(0)}>moon</PlanetSelect>
+          <PlanetSelect onClick={() => setIndex(1)}>mars</PlanetSelect>
+          <PlanetSelect onClick={() => setIndex(2)}>europa</PlanetSelect>
+          <PlanetSelect onClick={() => setIndex(3)}>titan</PlanetSelect>
         </MenuContainer>
+        <PlanetInfoContainer>
+          <DestinationText
+            title={planetdata[index].title}
+            bodyText={planetdata[index].bodyText}
+            aveDistance={planetdata[index].aveDistance}
+            estTime={planetdata[index].estTime}
+          />
+        </PlanetInfoContainer>
       </MainDiv>
     </BodyDiv>
   );

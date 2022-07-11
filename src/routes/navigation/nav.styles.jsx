@@ -35,15 +35,18 @@ export const LinkContainer = styled.div`
   grid-area: nav;
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(4, minmax(25rem, 35rem));
+  grid-template-columns: repeat(4, minmax(20rem, 35rem));
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
+  margin-right: 5rem;
 `;
 
 export const NavLink = styled(Link)`
   margin: 0 2rem;
+  display: flex;
+  flex-direction: row;
   font-family: 'Barlow Condensed';
   font-size: 1.6rem;
   letter-spacing: 0.27rem;
@@ -51,11 +54,12 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   justify-self: center;
+  margin: 0 0;
 `;
 
 export const TestLink = styled.h2`
   margin-left: 3rem;
-  display: inline-flex;
+  display: flex;
   font-family: 'Barlow Condensed';
   font-size: 1.4rem;
   letter-spacing: 0.23rem;
@@ -63,6 +67,7 @@ export const TestLink = styled.h2`
   cursor: pointer;
   text-decoration: none;
   justify-self: center;
+  margin: 0 0;
 `;
 
 export const CustomHr = styled.hr`
@@ -72,10 +77,12 @@ export const CustomHr = styled.hr`
   color: rgba(255, 255, 255, 0.25);
 `;
 
-export const TitleNumbers = styled.h2`
-  display: inline-flex;
+export const TitleNumbers = styled.h1`
+  display: flex;
+  flex-direction: row;
   font-family: 'Barlow Condensed';
-  font-weight: 300;
-  font-size: 1.4rem;
+  font-weight: 700;
+  font-size: 1.6rem;
   color: #ffffff;
+  margin: 0 1rem 0 0;
 `;
