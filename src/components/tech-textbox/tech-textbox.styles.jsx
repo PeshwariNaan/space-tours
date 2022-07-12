@@ -21,7 +21,7 @@ export const LeadText = styled.p`
   letter-spacing: 0.27rem;
   text-transform: uppercase;
   color: #d0d6f9;
-  margin: 0 0 0 0;
+  margin: 10rem 0 0 0;
 `;
 
 export const BodyText = styled.p`

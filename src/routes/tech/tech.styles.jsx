@@ -31,10 +31,26 @@ export const TextContainer = styled.div`
 
 export const ButtonContainer = styled.div`
     grid-column: 2 / 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    align-content: center;
+    margin: 5rem 0 0 0;
 `
 
 export const TechButton = styled.button`
-
+    height: 8rem;
+    width: 8rem;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: #ffffff;    
+    margin: 0 0 10% 0;
+    :hover {
+        background-color: #ffffff;
+        color: black;
+    }
 `
 export const TechImageContainer = styled.div`
     grid-column: 2 / 3;

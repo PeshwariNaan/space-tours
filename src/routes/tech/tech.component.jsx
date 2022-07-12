@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import NumberTitle from '../../components/page-number-title/number-title.component';
 import TechTextbox from '../../components/tech-textbox/tech-textbox.component';
 import { techdata as data } from '../../techdata';
@@ -8,9 +9,11 @@ import {
   TechImageContainer,
   TechInfoContainer,
   TextContainer,
+  TechButton
 } from './tech.styles';
 
 const TechPage = () => {
+  const [index, setIndex] = useState(0)
   return (
     <BodyDiv>
       <MainDiv>
@@ -25,13 +28,18 @@ const TechPage = () => {
         <TechInfoContainer>
           <TextContainer>
             <TechTextbox
-              title={data[0].title}
-              description={data[0].description}
+              title={data[index].title}
+              description={data[index].description}
             />
           </TextContainer>
+          <ButtonContainer>
+            <TechButton onClick={() => setIndex(0)}>1</TechButton>
+            <TechButton onClick={() => setIndex(1)}>2</TechButton>
+            <TechButton onClick={() => setIndex(2)}>3</TechButton>            
+          </ButtonContainer>
         </TechInfoContainer>
         <TechImageContainer>
-          <img src={data[0].img} alt={data[0].alt} />
+          <img src={data[index].img} alt={data[0].alt} />
         </TechImageContainer>
       </MainDiv>
     </BodyDiv>
