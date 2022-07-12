@@ -30,3 +30,30 @@ export const CrewImageContianer = styled.div`
   justify-content: end;
   margin: 0 5rem 0 25%;
 `
+
+export const CrewMenuContainer = styled.div`
+  grid-column: 1 / 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 27%;
+`
+
+export const SmallButton = styled.button`
+    height: 1.5rem;
+    width: 1.5rem;    
+    background-color: #808080;
+    cursor: pointer;
+    border-radius: 50%;
+    border-style: none;
+    text-align: center;
+    margin-right: 3rem;
+
+    :hover {
+      background-color:  #a9a9a9;
+    }
+    :active {
+      background-color: #ffffff;
+    }
+`
