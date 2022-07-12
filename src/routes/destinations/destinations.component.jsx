@@ -1,11 +1,9 @@
 import { useState } from 'react';
+import NumberTitle from '../../components/page-number-title/number-title.component';
 
 import {
   BodyDiv,
   MainDiv,
-  PageNumber,
-  PageTitleContainer,
-  PageTitleText,
   PlanetImageContainer,
   MenuContainer,
   PlanetSelect,
@@ -20,10 +18,14 @@ const DestinationsPage = () => {
   return (
     <BodyDiv>
       <MainDiv>
-        <PageTitleContainer>
-          <PageNumber>01</PageNumber>
-          <PageTitleText>Pick your destination</PageTitleText>
-        </PageTitleContainer>
+        <NumberTitle
+        columnStart={1}
+        columnEnd={2}
+        rowStart={2}
+        rowEnd={3}
+        number='01'
+        title='Pick your destination'
+        />
         <PlanetImageContainer>
           <img
             src={planetdata[index].planetImg}

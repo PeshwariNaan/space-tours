@@ -17,7 +17,8 @@ export const MainDiv = styled.div`
 `;
 
 export const PlanetImageContainer = styled.div`
-  grid-column: 1 / 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 5;
   place-self: center;
