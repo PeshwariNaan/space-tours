@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const CrewDataContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: auto;
+  width: 100%;
   margin: 0 0 0 27%;
 `;
 

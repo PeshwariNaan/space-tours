@@ -25,10 +25,9 @@ export const CrewInfoContainer = styled.div`
 
 export const CrewImageContianer = styled.div`
   grid-column: 2 / 3;
-  grid-row-start: 2;
+  grid-row-start: 3;
   grid-row-end: 5;
-  justify-content: end;
-  margin: 0 5rem 0 25%;
+  margin: 0 5rem 0 30%;
 `
 
 export const CrewMenuContainer = styled.div`
@@ -37,7 +36,7 @@ export const CrewMenuContainer = styled.div`
   grid-row-end: 5;
   display: flex;
   flex-direction: row;
-  margin: 0 0 0 27%;
+  margin: 2rem 0 0 27%;
 `
 
 export const SmallButton = styled.button`
