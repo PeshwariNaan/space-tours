@@ -1,6 +1,12 @@
 import NumberTitle from '../../components/page-number-title/number-title.component';
-
-import { BodyDiv, MainDiv } from './tech.styles';
+import TechTextbox from '../../components/tech-textbox/tech-textbox.component';
+import {
+  BodyDiv,
+  ButtonContainer,
+  MainDiv,
+  TechInfoContainer,
+  TextContainer,
+} from './tech.styles';
 
 const TechPage = () => {
   return (
@@ -14,6 +20,11 @@ const TechPage = () => {
           number="03"
           title="Space launch 101"
         />
+        <TechInfoContainer>
+          <TextContainer>
+            <TechTextbox />
+          </TextContainer>
+        </TechInfoContainer>
       </MainDiv>
     </BodyDiv>
   );

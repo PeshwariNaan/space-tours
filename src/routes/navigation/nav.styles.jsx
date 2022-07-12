@@ -45,7 +45,6 @@ export const LinkContainer = styled.div`
 `;
 
 export const NavLink = styled(Link)`
-  margin: 0 2rem;
   display: flex;
   flex-direction: row;
   font-family: 'Barlow Condensed';
@@ -55,7 +54,7 @@ export const NavLink = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   justify-self: center;
-  margin: 0 0;
+  margin: 0 2rem;
 
   :hover {
     border-bottom: 2px solid #444444;
@@ -72,7 +71,7 @@ export const CustomHr = styled.hr`
   color: rgba(255, 255, 255, 0.25);
 `;
 
-export const TitleNumbers = styled.h1`
+export const TitleNumbers = styled.h5`
   display: flex;
   flex-direction: row;
   font-family: 'Barlow Condensed';
