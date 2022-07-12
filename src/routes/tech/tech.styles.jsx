@@ -36,3 +36,10 @@ export const ButtonContainer = styled.div`
 export const TechButton = styled.button`
 
 `
+export const TechImageContainer = styled.div`
+    grid-column: 2 / 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: center;
+`
