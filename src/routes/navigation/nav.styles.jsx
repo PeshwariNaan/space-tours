@@ -41,6 +41,7 @@ export const LinkContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   margin-right: 5rem;
+ 
 `;
 
 export const NavLink = styled(Link)`
@@ -55,19 +56,13 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   justify-self: center;
   margin: 0 0;
-`;
 
-export const TestLink = styled.h2`
-  margin-left: 3rem;
-  display: flex;
-  font-family: 'Barlow Condensed';
-  font-size: 1.4rem;
-  letter-spacing: 0.23rem;
-  color: #ffffff;
-  cursor: pointer;
-  text-decoration: none;
-  justify-self: center;
-  margin: 0 0;
+  :hover {
+    border-bottom: 2px solid #444444;
+  }
+  :active {
+    border-bottom: 2px solid #ffffff;
+  }
 `;
 
 export const CustomHr = styled.hr`

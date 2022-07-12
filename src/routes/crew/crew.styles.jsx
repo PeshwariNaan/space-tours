@@ -15,22 +15,18 @@ export const MainDiv = styled.div`
   grid-template-rows: [row1-start] 24vh [row1-end row2-start] 8vh [row2-end row3-start] 56vh [row3-end row4-start] 12vh;
 `;
 
-export const PageTitleText = styled.h5`
-  font-family: 'Barlow Condensed';
-  font-size: 2.8rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #ffffff;
-  letter-spacing: 0.475rem;
-  margin: 0;
-`;
+export const CrewInfoContainer = styled.div`
+  grid-column: 1 / 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-content: center;
 
-export const PageNumber = styled.h1`
-  display: flex;
-  flex-direction: row;
-  font-family: 'Barlow Condensed';
-  font-size: 2.8rem;
-  font-weight: 600;
-  color: #333333;
-  margin: 0 2rem;
-`;
+`
+
+export const CrewImageContianer = styled.div`
+  grid-column: 2 / 3;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  justify-content: end;
+  margin: 0 5rem 0 25%;
+`

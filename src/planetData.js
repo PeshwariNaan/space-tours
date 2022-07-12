@@ -1,4 +1,4 @@
-const planetdata = [
+export const planetdata = [
   {
     title: 'MOON',
     planetImg:
@@ -40,5 +40,3 @@ const planetdata = [
     estTime: '7 years',
   },
 ];
-
-export default planetdata;

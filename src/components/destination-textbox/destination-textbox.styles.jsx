@@ -4,10 +4,9 @@ export const PlanetDataContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: min-content;
-  //height: 20rem;
 `;
 
-export const PlanetTitle = styled.h1`
+export const PlanetTitle = styled.h2`
   font-family: 'Lora';
   font-weight: 100;
   font-size: 10rem;
@@ -30,7 +29,7 @@ export const PlanetSpecsContainer = styled.div`
   margin: 0 0 0 0;
 `;
 
-export const SpecsText = styled.h2`
+export const SpecsText = styled.h5`
   display: flex;
   flex-direction: row;
   font-family: 'Barlow Condensed';
@@ -49,7 +48,7 @@ export const SpecsValueContainer = styled.div`
   margin: 0 0 0 0;
 `;
 
-export const SpecValueText = styled.h3`
+export const SpecValueText = styled.h5`
     font-family: 'lola';
     font-size: 2.4rem;
     font-weight: 100;

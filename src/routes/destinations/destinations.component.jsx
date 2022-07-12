@@ -10,7 +10,7 @@ import {
   PlanetInfoContainer,
 } from './destinations.styles';
 import DestinationText from '../../components/destination-textbox/destination-textbox.component';
-import planetdata from '../../planetData';
+import {planetdata as data} from '../../planetData';
 
 const DestinationsPage = () => {
   const [index, setIndex] = useState(0)
@@ -28,8 +28,8 @@ const DestinationsPage = () => {
         />
         <PlanetImageContainer>
           <img
-            src={planetdata[index].planetImg}
-            alt={planetdata[index].alt}
+            src={data[index].planetImg}
+            alt={data[index].alt}
           />
         </PlanetImageContainer>
         <MenuContainer>
@@ -40,10 +40,10 @@ const DestinationsPage = () => {
         </MenuContainer>
         <PlanetInfoContainer>
           <DestinationText
-            title={planetdata[index].title}
-            bodyText={planetdata[index].bodyText}
-            aveDistance={planetdata[index].aveDistance}
-            estTime={planetdata[index].estTime}
+            title={data[index].title}
+            bodyText={data[index].bodyText}
+            aveDistance={data[index].aveDistance}
+            estTime={data[index].estTime}
           />
         </PlanetInfoContainer>
       </MainDiv>
