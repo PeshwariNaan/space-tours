@@ -13,7 +13,7 @@ export const BodyDiv = styled.div`
 export const MainDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: [row1-start] 20vh [row1-end row2-start] 10vh [row2-end row3-start] 10vh [row3-end row4-start] 60vh;
+  grid-template-rows: [row1-start] 24vh [row1-end row2-start] 8vh [row2-end row3-start] 8vh [row3-end row4-start] 60vh;
 `;
 
 export const PlanetImageContainer = styled.div`
@@ -61,9 +61,7 @@ export const MenuContainer = styled.div`
   grid-row-end: 4;
   display: flex;
   flex-direction: row;
-  margin: 2.5rem 0 0 0;
-  
-  
+  margin: 2.5rem 0 0 0;  
 `;
 
 export const PlanetSelect = styled.h3`
@@ -75,6 +73,15 @@ export const PlanetSelect = styled.h3`
   color: #ffffff;
   cursor: pointer;
   margin: 0 4rem 0 0;
+
+  :hover {
+    border-bottom: 2px solid #444444;
+  }
+  :active {
+    border-bottom: 2px solid #ffffff;
+  }
+  
+ 
 `;
 
 export const PlanetInfoContainer = styled.div`

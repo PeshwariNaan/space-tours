@@ -32,6 +32,7 @@ export const HomeTextDiv = styled.div`
 
 export const HomeHeading1 = styled.h1`
   font-family: 'Lora';
+  font-weight: 100;
   font-size: 15rem;
   text-transform: uppercase;
   color: #ffffff;
