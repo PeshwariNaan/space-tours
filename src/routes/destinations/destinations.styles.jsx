@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const BodyDiv = styled.div`
   background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446587/space_tours/Destinations/background-destination-desktop_dzcews.jpg)
@@ -36,6 +37,12 @@ export const MenuContainer = styled.div`
   margin: 2.5rem 0 0 0;  
 `;
 
+const TestLink = styled(NavLink)`
+   &.active {
+    border-bottom: 2px solid #ffffff;
+  }
+`
+
 export const PlanetSelect = styled.h3`
   font-family: 'Barlow Condensed';
   font-weight: 300;
@@ -46,10 +53,11 @@ export const PlanetSelect = styled.h3`
   cursor: pointer;
   margin: 0 4rem 0 0;
 
-  :hover {
+  &:hover {
     border-bottom: 2px solid #444444;
   }
-  :active {
+  &:active,
+  &.active {
     border-bottom: 2px solid #ffffff;
   }
   

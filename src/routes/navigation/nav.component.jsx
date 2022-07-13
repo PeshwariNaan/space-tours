@@ -7,8 +7,9 @@ import {
   LinkContainer,
   LogoContainer,
   NavContainer,
-  NavLink,
+  Link,
   TitleNumbers,
+  TestLinkContainer,
 } from './nav.styles';
 
 const Navbar = () => {
@@ -21,12 +22,12 @@ const Navbar = () => {
         <HLineContainer>
           <CustomHr />
         </HLineContainer>
-        <LinkContainer>
-          <NavLink to={'/'}><TitleNumbers>00</TitleNumbers>HOME</NavLink>
-          <NavLink to={'/destinations'}><TitleNumbers>01</TitleNumbers>DESTINATIONS</NavLink>
-          <NavLink to={'/crew'}><TitleNumbers>02</TitleNumbers>CREW</NavLink>
-          <NavLink to={'/technology'}><TitleNumbers>03</TitleNumbers>TECHNOLOGY</NavLink>
-        </LinkContainer>
+        <TestLinkContainer>
+          <Link to={'/'}><TitleNumbers>00</TitleNumbers>HOME</Link>
+          <Link to={'/destinations'}><TitleNumbers>01</TitleNumbers>DESTINATIONS</Link>
+          <Link to={'/crew'}><TitleNumbers>02</TitleNumbers>CREW</Link>
+          <Link to={'/technology'}><TitleNumbers>03</TitleNumbers>TECHNOLOGY</Link>
+        </TestLinkContainer>
       </NavContainer>
       <Outlet />
     </Fragment>

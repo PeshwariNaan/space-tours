@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export const NavContainer = styled.div`
   position: fixed;
-  margin-top: 10rem;
+  margin-top: 8vh;
   z-index: 900;
   width: 100%;
   height: 10.5rem;
   display: grid;
-  grid-template-columns: minmax(15rem, 20rem) 1fr min-content;
+  grid-template-columns: minmax(15rem, 20rem) 1fr 50vw;
   grid-template-areas: 'logo image nav';
   background-color: transparent;
 `;
@@ -26,7 +26,7 @@ export const LogoContainer = styled.div`
 export const HLineContainer = styled.div`
   grid-area: image;
   height: 100%;
-  width: 100%;
+  width: auto;
   padding-left: 3rem;
   align-content: center;
 `;
@@ -41,25 +41,41 @@ export const LinkContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   margin-right: 5rem;
- 
 `;
 
-export const NavLink = styled(Link)`
+export const TestLinkContainer = styled.div`
+  grid-area: nav;  
   display: flex;
   flex-direction: row;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  justify-content: space-between;
+  
+  
+`;
+
+export const Link = styled(NavLink)`
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 3;
   font-family: 'Barlow Condensed';
   font-size: 1.6rem;
   letter-spacing: 0.27rem;
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
-  justify-self: center;
-  margin: 0 2rem;
+  //align-self: center;
+  margin: 4.5rem 0 0 0;
+
+  :first-child {
+    margin-left: 10%;
+  }
 
   :hover {
     border-bottom: 2px solid #444444;
   }
-  :active {
+  &.active {
     border-bottom: 2px solid #ffffff;
   }
 `;
