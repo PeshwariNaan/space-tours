@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import {
   BodyDiv,
   HomeContainer,
@@ -11,6 +12,11 @@ import {
 import HomeButton from '../../components/home-button/home-button.component';
 
 const Home = () => {
+  const navigate = useNavigate()
+  const goToDestinationsHandler = () => {
+    navigate('/destinations')
+  }
+
   return (
     <BodyDiv>
       <HomeContainer>
@@ -27,7 +33,7 @@ const Home = () => {
           </HomeTextDiv>
         </TextDiv>
         <ButtonDiv>
-          <HomeButton><h2>EXPLORE</h2></HomeButton>
+          <HomeButton onClick={goToDestinationsHandler}><h2>EXPLORE</h2></HomeButton>
         </ButtonDiv>
       </HomeContainer>
     </BodyDiv>

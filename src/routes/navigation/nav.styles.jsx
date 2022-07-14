@@ -71,6 +71,9 @@ export const Link = styled(NavLink)`
   :first-child {
     margin-left: 10%;
   }
+  :last-child {
+    margin-right: 5rem;
+  }
 
   :hover {
     border-bottom: 2px solid #444444;
