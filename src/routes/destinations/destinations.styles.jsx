@@ -9,12 +9,22 @@ export const BodyDiv = styled.div`
   height: 100vh;
   background-position: center center;
   margin: 0;
+
+    @media (max-width: 768px) {
+      background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446586/space_tours/Destinations/background-destination-tablet_urunme.jpg)
+    no-repeat;
+    }
 `;
 
 export const MainDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: [row1-start] 24vh [row1-end row2-start] 8vh [row2-end row3-start] 8vh [row3-end row4-start] 60vh;
+
+    @media (max-width: 1200px) {
+      grid-template-columns: none;
+      grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 8vh [row3-end row4-start] 60vh;
+    }
 `;
 
 export const PlanetImageContainer = styled.div`
@@ -25,6 +35,10 @@ export const PlanetImageContainer = styled.div`
   place-self: center;
   padding-bottom: 8rem;
   padding-left: 15rem;
+
+    @media (max-width: 1200px) {
+      
+    }
 `;
 
 
@@ -37,11 +51,6 @@ export const MenuContainer = styled.div`
   margin: 2.5rem 0 0 0;  
 `;
 
-const TestLink = styled(NavLink)`
-   &.active {
-    border-bottom: 2px solid #ffffff;
-  }
-`
 
 export const PlanetSelect = styled.h3`
   font-family: 'Barlow Condensed';
@@ -65,9 +74,15 @@ export const PlanetSelect = styled.h3`
 `;
 
 export const PlanetInfoContainer = styled.div`
-  grid-column: 2 /3;
+  grid-column: 2 / 3;
   grid-row-start: 4;
   grid-row-end: 5;
   justify-content: center;
 
+`
+
+export const PageTitleNumberContainer = styled.div`
+  grid-column: 1 / 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 `

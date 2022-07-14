@@ -8,29 +8,22 @@ import {
   MenuContainer,
   PlanetSelect,
   PlanetInfoContainer,
+  PageTitleNumberContainer
 } from './destinations.styles';
 import DestinationText from '../../components/destination-textbox/destination-textbox.component';
-import {planetdata as data} from '../../planetData';
+import { planetdata as data } from '../../planetData';
 
 const DestinationsPage = () => {
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(0);
 
   return (
     <BodyDiv>
       <MainDiv>
-        <NumberTitle
-        columnStart={1}
-        columnEnd={2}
-        rowStart={2}
-        rowEnd={3}
-        number='01'
-        title='Pick your destination'
-        />
+        <PageTitleNumberContainer>
+          <NumberTitle number="01" title="Pick your destination" />
+        </PageTitleNumberContainer>
         <PlanetImageContainer>
-          <img
-            src={data[index].planetImg}
-            alt={data[index].alt}
-          />
+          <img src={data[index].planetImg} alt={data[index].alt} />
         </PlanetImageContainer>
         <MenuContainer>
           <PlanetSelect onClick={() => setIndex(0)}>moon</PlanetSelect>
