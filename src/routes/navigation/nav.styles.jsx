@@ -24,7 +24,6 @@ export const LogoContainer = styled.div`
   height: 100%;
   width: 100px;
   padding-top: 2.5rem;
-  padding-left: 0rem;
   background-size: 2rem 3rem;
   justify-self: end;
 
@@ -96,6 +95,8 @@ export const Link = styled(NavLink)`
   :last-child {
     margin-right: 1rem;
   }
+  font-size: 1.4rem;
+
   }
 `;
 

@@ -8,19 +8,40 @@ export const BodyDiv = styled.div`
   background-size: cover;
   height: 100vh;
   background-position: center center;
+
+    @media(max-width: 768px) {
+      background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446748/space_tours/Home/background-home-tablet_a54qxg.jpg) no-repeat;
+    }
+
+    @media(max-width: 375px) {
+      background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446748/space_tours/Home/background-home-mobile_qfafst.jpg) no-repeat;
+    }
 `;
 
 export const HomeContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: [row1-start] 40vh [row1-end row2-start] 60vh [row2-end];
+
+    @media (max-width: 1200px) {
+      grid-template-columns: 1;
+      grid-template-rows: [row1-start] 10vh [row1-end row2-start] 50vh [row2- end row3-start] 30vh [row3-end];
+    }
 `;
 
 export const TextDiv = styled.div`
   grid-column: 1 / 2;
   grid-row: 2;
-  margin-left: 27%;
-  align-content: flex-end;
+  /* margin-left: 27%;
+  align-content: flex-end; */
+  justify-self: center;
+
+    @media (max-width: 1200px) {
+      grid-column: 1 / 3;
+      grid-row: 2;
+      margin-left: 0;
+      justify-self: center;
+    }
 `;
 
 export const HomeTextDiv = styled.div`
@@ -28,6 +49,10 @@ export const HomeTextDiv = styled.div`
   flex-direction: column;
   width: min-content;
   height: 20rem;
+
+    @media (max-width: 1200px) {
+      align-items: center;
+    }
 `;
 
 export const HomeHeading1 = styled.h1`
@@ -56,11 +81,20 @@ export const HomeBodyText = styled.p`
   color: #d0d6f9;
   font-size: 2rem;
   margin-top: 0.5rem;
+  
+    @media (max-width: 1200px) {
+      text-align: center;
+    }
 `;
 
 export const ButtonDiv = styled.div`
   grid-column: 2 / 3;
   grid-row: 2;
   place-self: center;
+
+    @media (max-width: 1200px) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
 `;
 
