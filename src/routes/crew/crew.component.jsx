@@ -7,7 +7,8 @@ import {
   MainDiv,
   CrewMenuContainer,
   SmallButton,
-
+  PageTitleNumberContainer,
+  CrewImg
 } from './crew.styles';
 import NumberTitle from '../../components/page-number-title/number-title.component';
 import CrewTextbox from '../../components/crew-textbox/crew-textbox.component';
@@ -19,14 +20,12 @@ const CrewPage = () => {
   return (
     <BodyDiv>
       <MainDiv>
+        <PageTitleNumberContainer>
         <NumberTitle
-          columnStart={1}
-          columnEnd={2}
-          rowStart={2}
-          rowEnd={3}
           number="02"
           title="Meet your crew"
         />
+        </PageTitleNumberContainer>
         <CrewInfoContainer>
           <CrewTextbox
             postion={data[index].position}
@@ -35,7 +34,7 @@ const CrewPage = () => {
           />
         </CrewInfoContainer>
         <CrewImageContianer>
-          <img src={data[index].crewImage} alt={data[index].alt} />
+          <CrewImg src={data[index].crewImage} alt={data[index].alt} />
         </CrewImageContianer>
         <CrewMenuContainer>
           <SmallButton onClick={() => setIndex(0)}/>

@@ -13,6 +13,8 @@ export const BodyDiv = styled.div`
   @media (max-width: 768px) {
     background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446586/space_tours/Destinations/background-destination-tablet_urunme.jpg)
       no-repeat;
+      background-size: cover;
+      height: 100vh;
   }
 `;
 
