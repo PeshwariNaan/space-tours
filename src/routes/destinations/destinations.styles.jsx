@@ -23,7 +23,7 @@ export const MainDiv = styled.div`
 
   @media (max-width: 1200px) {
     grid-template-columns: minmax(50rem, 120rem);
-    grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 8vh [row4-end row5-start] 42vh [row5-end];
+    grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 5vh [row4-end row5-start] 42vh [row5-end];
     //margin: auto;
   }
 `;
@@ -33,15 +33,14 @@ export const PlanetImageContainer = styled.div`
   grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 5;
-  place-self: center;
-  justify-content: center;
-  padding-bottom: 8rem;
-  padding-left: 15rem;
+  padding: 0 0 8rem 32%;
 
   @media (max-width: 1200px) {
     grid-column: 1 / -1;
     grid-row-start: 3;
     grid-row-end: 4;
+    padding: 0 0 0 0;
+    place-self: center;
     
   }
 `;
@@ -49,10 +48,11 @@ export const PlanetImageContainer = styled.div`
 export const PlanetImage = styled.img`
   width: 45rem;
   height: 45rem;
-
+  
     @media (max-width: 1200px) {
       width: 30rem;
       height: 30rem;
+      place-self: center;
     }
 `
 
@@ -62,14 +62,15 @@ export const MenuContainer = styled.div`
   grid-row-end: 4;
   display: flex;
   flex-direction: row;
-  place-self: center;
+  justify-content: center;
   margin: 2.5rem 0 0 0;
 
   @media (max-width: 1200px) {
     grid-column: 1 / -1; 
     grid-row-start: 4;
     grid-row-end: 5;
-    place-self: center;
+    
+    margin: 1rem 0 0 0;
   }
 `;
 
@@ -82,7 +83,9 @@ export const PlanetSelect = styled.h3`
   color: #ffffff;
   cursor: pointer;
   margin: 0 4rem 0 0;
-
+  :last-child {
+    margin-right: 0;
+  }
   &:hover {
     border-bottom: 2px solid #444444;
   }
@@ -90,6 +93,9 @@ export const PlanetSelect = styled.h3`
   &.active {
     border-bottom: 2px solid #ffffff;
   }
+    @media (max-width: 1200px) {
+      
+    }
 `;
 
 export const PlanetInfoContainer = styled.div`

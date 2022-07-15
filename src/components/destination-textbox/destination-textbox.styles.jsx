@@ -19,7 +19,7 @@ export const PlanetTitle = styled.h2`
 
     @media (max-width: 1200px) {
       text-align: center;    
-      
+      place-self: center;
       margin: 0 0 0 0;
     }
 `;

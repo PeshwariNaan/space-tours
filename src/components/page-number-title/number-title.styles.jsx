@@ -9,7 +9,7 @@ export const PageTitleContainer = styled.div`
   grid-row-end: ${props => props.rowEnd};
   justify-items: center;
   align-items: center;
-  padding: 5rem 0 0 25%;
+  padding: 0 0 0 25%;
 
     @media (max-width: 1200px) {
       padding: 5rem 0 0 3%;
