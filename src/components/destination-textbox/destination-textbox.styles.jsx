@@ -71,7 +71,8 @@ export const SpecsText = styled.h5`
   margin: 0 10rem 0 0;
   
     @media (max-width: 1200px) {
-      
+      place-self: center;
+      margin: 0 0 0 0;
     }
 `;
 
@@ -85,7 +86,8 @@ export const SpecValueText = styled.h5`
    
 
     @media (max-width: 1200px) {
-      text-align: center;
+      place-self: center;
+      margin: 0 0 0 0;
     }
 `;
 

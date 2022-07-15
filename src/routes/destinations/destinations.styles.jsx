@@ -24,7 +24,7 @@ export const MainDiv = styled.div`
   @media (max-width: 1200px) {
     grid-template-columns: minmax(50rem, 120rem);
     grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 8vh [row4-end row5-start] 42vh [row5-end];
-    margin: auto;
+    //margin: auto;
   }
 `;
 
@@ -34,6 +34,7 @@ export const PlanetImageContainer = styled.div`
   grid-row-start: 3;
   grid-row-end: 5;
   place-self: center;
+  justify-content: center;
   padding-bottom: 8rem;
   padding-left: 15rem;
 
@@ -41,7 +42,7 @@ export const PlanetImageContainer = styled.div`
     grid-column: 1 / -1;
     grid-row-start: 3;
     grid-row-end: 4;
-    place-self: center;
+    
   }
 `;
 
@@ -61,6 +62,7 @@ export const MenuContainer = styled.div`
   grid-row-end: 4;
   display: flex;
   flex-direction: row;
+  place-self: center;
   margin: 2.5rem 0 0 0;
 
   @media (max-width: 1200px) {
@@ -94,6 +96,7 @@ export const PlanetInfoContainer = styled.div`
   grid-column: 2 / 3;
   grid-row-start: 4;
   grid-row-end: 5;
+  justify-self: center;
   justify-content: center;
   margin: 0 0 0 2rem;
 
@@ -114,6 +117,7 @@ export const PageTitleNumberContainer = styled.div`
     grid-column: 1 / -1;
     grid-row-start: 2;
     grid-row-end: 3;
+    justify-content: flex-start;
     
   }
 `;
