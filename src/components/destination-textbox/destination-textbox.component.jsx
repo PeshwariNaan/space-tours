@@ -5,8 +5,8 @@ import {
   Hrule,
   PlanetSpecsContainer,
   SpecsText,
-  SpecsValueContainer,
   SpecValueText,
+  ValuesContainer,
 } from './destination-textbox.styles';
 
 const DestinationText = ({ title, aveDistance, estTime, bodyText }) => {
@@ -16,11 +16,16 @@ const DestinationText = ({ title, aveDistance, estTime, bodyText }) => {
       <PlanetBodyText>{bodyText}</PlanetBodyText>
       <Hrule />
       <PlanetSpecsContainer>
-        <SpecsText>Avg. Distance</SpecsText><SpecsText>Est. Travel Time</SpecsText>
+        <ValuesContainer>
+          <SpecsText>Avg. Distance</SpecsText>
+          <SpecValueText>{aveDistance}</SpecValueText>
+        </ValuesContainer>
+        <ValuesContainer>
+        <SpecsText>Est. Travel Time</SpecsText>
+          <SpecValueText>{estTime}</SpecValueText>
+        </ValuesContainer>       
       </PlanetSpecsContainer>
-      <SpecsValueContainer>
-        <SpecValueText>{aveDistance}</SpecValueText><SpecValueText>{estTime}</SpecValueText>
-      </SpecsValueContainer>
+     
     </PlanetDataContainer>
   );
 };
