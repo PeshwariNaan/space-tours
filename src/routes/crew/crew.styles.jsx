@@ -7,6 +7,15 @@ export const BodyDiv = styled.div`
   background-size: cover;
   height: 100vh;
   background-position: center center;
+
+  @media (max-width: 1200px) {
+    background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446651/space_tours/Crew/background-crew-tablet_avjbpt.jpg)
+      no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+  }
 `;
 
 export const MainDiv = styled.div`
@@ -52,12 +61,11 @@ export const CrewImageContianer = styled.div`
 
 export const CrewImg = styled.img`
   width: fit-content;
-  height: fit-content;  
+  height: fit-content;
   margin: 2.5rem 0 0 0;
 
   @media (max-width: 1200px) {
-   place-self: center;
-    
+    place-self: center;
   }
 `;
 
@@ -74,7 +82,7 @@ export const CrewMenuContainer = styled.div`
     grid-row-start: 4;
     grid-row-end: 5;
     justify-content: center;
-    margin: 0 0 0 0;
+    margin: auto 0 0 0;
   }
 `;
 
@@ -94,6 +102,11 @@ export const SmallButton = styled.button`
   :active {
     background-color: #ffffff;
   }
+
+    @media (max-width: 1200px) {
+      height: 1rem;
+      width: 1rem;
+    }
 `;
 export const PageTitleNumberContainer = styled.div`
   grid-column: 1 / 2;
