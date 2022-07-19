@@ -90,7 +90,7 @@ export const CrewMenuContainer = styled.div`
 export const SmallButton = styled.button`
   height: 1.5rem;
   width: 1.5rem;
-  background-color: #808080;
+  background-color: ${props => props.isSelected ? '#ffffff': '#808080'};
   cursor: pointer;
   border-radius: 50%;
   border-style: none;
