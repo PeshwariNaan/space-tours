@@ -84,6 +84,7 @@ export const PlanetSelect = styled.h3`
   letter-spacing: 0.27rem;
   text-transform: uppercase;
   color: #ffffff;
+  border-bottom: ${props => props.isSelected? '2px solid #ffffff' : 'none'};
   cursor: pointer;
   margin: 0 4rem 0 0;
   :last-child {

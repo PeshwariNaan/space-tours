@@ -29,10 +29,6 @@ const TechPage = () => {
       <MainDiv>
         <PageTitleNumberContainer>
           <NumberTitle
-            columnStart={1}
-            columnEnd={2}
-            rowStart={2}
-            rowEnd={3}
             number="03"
             title="Space launch 101"
           />
@@ -47,7 +43,7 @@ const TechPage = () => {
           <ButtonContainer>
             <TechButton
               id="1"
-              onClick={(e, id) => {
+              onClick={() => {
                 setIndex(0);
                 handleClick('1');
               }}
@@ -67,7 +63,7 @@ const TechPage = () => {
             </TechButton>
             <TechButton
               id="3"
-              onClick={(e) => {
+              onClick={() => {
                 setIndex(2);
                 handleClick('3');
               }}
