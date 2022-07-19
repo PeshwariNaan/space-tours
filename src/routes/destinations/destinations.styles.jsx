@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+
 
 export const BodyDiv = styled.div`
   background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446587/space_tours/Destinations/background-destination-desktop_dzcews.jpg)
@@ -26,7 +26,7 @@ export const MainDiv = styled.div`
   @media (max-width: 1200px) {
     grid-template-columns: minmax(50rem, 120rem);
     grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 5vh [row4-end row5-start] 42vh [row5-end];
-    //margin: auto;
+    
   }
 `;
 

@@ -9,7 +9,8 @@ import {
   TechImageContainer,
   TechInfoContainer,
   TextContainer,
-  TechButton
+  TechButton,
+  PageTitleNumberContainer
 } from './tech.styles';
 
 const TechPage = () => {
@@ -17,6 +18,7 @@ const TechPage = () => {
   return (
     <BodyDiv>
       <MainDiv>
+        <PageTitleNumberContainer>
         <NumberTitle
           columnStart={1}
           columnEnd={2}
@@ -25,6 +27,7 @@ const TechPage = () => {
           number="03"
           title="Space launch 101"
         />
+        </PageTitleNumberContainer>
         <TechInfoContainer>
           <TextContainer>
             <TechTextbox
@@ -39,7 +42,7 @@ const TechPage = () => {
           </ButtonContainer>
         </TechInfoContainer>
         <TechImageContainer>
-          <img src={data[index].img} alt={data[0].alt} />
+          <img src={data[index].imgLarge} alt={data[0].alt} />
         </TechImageContainer>
       </MainDiv>
     </BodyDiv>

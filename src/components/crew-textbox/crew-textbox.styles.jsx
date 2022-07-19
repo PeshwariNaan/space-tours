@@ -55,8 +55,7 @@ export const Description = styled.p`
     }
     @media (max-width: 600px) {
       width: 95vw;
-      place-self: center;
-      text-align: center;
+      
     }
 
 `;
