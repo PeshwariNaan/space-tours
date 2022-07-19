@@ -80,10 +80,11 @@ export const ButtonContainer = styled.div`
 export const TechButton = styled.button`
   height: 8rem;
   width: 8rem;
-  color: #ffffff;
+  color: ${props => props.isSelected? 'black' : '#ffffff'};
   border-radius: 50%;
-  background-color: transparent;
+  background-color: ${props => props.isSelected? '#ffffff' : 'transparent'};
   border-color: #ffffff;
+  border-style: solid;
   margin: 0 0 10% 0;
   :hover {
     background-color: #ffffff;
