@@ -91,7 +91,7 @@ export const PlanetSelect = styled.h3`
     margin-right: 0;
   }
   &:hover {
-    border-bottom: 2px solid #444444;
+    border-bottom: ${props => props.isSelected ? '2px solid #ffffff': '2px solid #444444'};
   }
     @media (max-width: 1200px) {
       

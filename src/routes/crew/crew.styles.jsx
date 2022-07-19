@@ -98,7 +98,7 @@ export const SmallButton = styled.button`
   margin-right: 3rem;
 
   :hover {
-    background-color: #a9a9a9;
+    background-color: ${props => props.isSelected ? '#ffffff': '#a9a9a9'};
   }
   :active {
     background-color: #ffffff;
