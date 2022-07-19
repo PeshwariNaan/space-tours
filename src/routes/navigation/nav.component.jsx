@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import { Outlet } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
+import { ReactComponent as Burger } from '../../assets/icon-hamburger.svg'
 import {
   HLineContainer,
   CustomHr,
@@ -9,6 +10,7 @@ import {
   NavContainer,
   Link,
   TitleNumbers,
+  HamburgerContainer,
   
 } from './nav.styles';
 
@@ -22,6 +24,9 @@ const Navbar = () => {
         <HLineContainer>
           <CustomHr />
         </HLineContainer>
+        <HamburgerContainer>
+          <Burger />
+        </HamburgerContainer>
         <LinkContainer>
           <Link to={'/'}><TitleNumbers>00</TitleNumbers>HOME</Link>
           <Link to={'/destinations'}><TitleNumbers>01</TitleNumbers>DESTINATIONS</Link>

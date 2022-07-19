@@ -17,6 +17,12 @@ export const NavContainer = styled.div`
     grid-template-areas: 'logo nav nav';
     margin-top: 0;
    }
+
+   @media (max-width: 500px) {
+    grid-template-columns: minmax(10rem, 15rem) auto minmax(5rem, 10rem);
+    grid-template-areas: 'logo . burger';
+    margin-top: 0;
+   }
 `;
 
 export const LogoContainer = styled.div`
@@ -31,6 +37,23 @@ export const LogoContainer = styled.div`
     padding-left: 1rem;
    }
 `;
+
+
+
+export const HamburgerContainer = styled.div`
+    @media (min-width: 501px){
+      display: none;
+    }
+  @media (max-width: 500px) {    
+    grid-area: burger;
+    width: 100%;
+    height: 100%;
+    background-size: 4rem 5rem;
+    padding: 4.5rem 0 0 4rem;
+  }
+
+
+`
 
 export const HLineContainer = styled.div`
   grid-area: image;
@@ -57,6 +80,10 @@ export const LinkContainer = styled.div`
     @media (max-width: 1200px) {
       justify-self: end;
       width: 70vw;
+    }
+
+    @media (max-width: 500px) {
+      display: none;
     }
   
   
