@@ -2,6 +2,7 @@ import { useState } from 'react';
 import NumberTitle from '../../components/page-number-title/number-title.component';
 import TechTextbox from '../../components/tech-textbox/tech-textbox.component';
 import { techdata as data } from '../../techdata';
+import useWindowDimensions from '../../hooks/use-window-size/use-window-size';
 import {
   BodyDiv,
   ButtonContainer,
@@ -15,6 +16,9 @@ import {
 
 const TechPage = () => {
   const [index, setIndex] = useState(0)
+
+  const { width } = useWindowDimensions();
+
   return (
     <BodyDiv>
       <MainDiv>
@@ -42,7 +46,7 @@ const TechPage = () => {
           </ButtonContainer>
         </TechInfoContainer>
         <TechImageContainer>
-          <img src={data[index].imgLarge} alt={data[0].alt} />
+          <img src={width > 1200 ? data[index].imgLarge : data[index].imgTablet} alt={data[0].alt} />
         </TechImageContainer>
       </MainDiv>
     </BodyDiv>
