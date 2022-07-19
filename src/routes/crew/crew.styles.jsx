@@ -49,6 +49,7 @@ export const CrewImageContianer = styled.div`
   grid-row-end: 5;
   padding: 0 5rem 0 30%;
   justify-self: center;
+  
 
   @media (max-width: 1200px) {
     grid-column: 1 / -1;

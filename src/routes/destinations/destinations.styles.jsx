@@ -21,7 +21,7 @@ export const BodyDiv = styled.div`
 export const MainDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(50rem, 80rem));
-  grid-template-rows: [row1-start] 24vh [row1-end row2-start] 8vh [row2-end row3-start] 8vh [row3-end row4-start] 60vh [row4-end];
+  grid-template-rows: [row1-start] 24vh [row1-end row2-start] 8vh [row2-end row3-start] 5vh [row3-end row4-start] 60vh [row4-end];
 
   @media (max-width: 1200px) {
     grid-template-columns: minmax(50rem, 120rem);
@@ -64,15 +64,16 @@ export const MenuContainer = styled.div`
   grid-row-end: 4;
   display: flex;
   flex-direction: row;
+  justify-self: center;
   justify-content: center;
-  margin: 2.5rem 0 0 0;
+  margin: 1rem 10rem 0 0;
 
   @media (max-width: 1200px) {
     grid-column: 1 / -1; 
     grid-row-start: 4;
-    grid-row-end: 5;
-    
-    margin: 1rem 0 0 0;
+    grid-row-end: 5;    
+    margin: 0 0 0 0;
+    justify-content: center;
   }
 `;
 
@@ -90,10 +91,6 @@ export const PlanetSelect = styled.h3`
   }
   &:hover {
     border-bottom: 2px solid #444444;
-  }
-  &:active,
-  &.active {
-    border-bottom: 2px solid #ffffff;
   }
     @media (max-width: 1200px) {
       

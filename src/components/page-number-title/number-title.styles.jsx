@@ -12,7 +12,7 @@ export const PageTitleContainer = styled.div`
   padding: 0 0 0 25%;
 
     @media (max-width: 1200px) {
-      padding: 5rem 0 0 3%;
+      padding: 2rem 0 0 3%;
     }
 `;
 
