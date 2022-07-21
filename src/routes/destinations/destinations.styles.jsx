@@ -23,7 +23,7 @@ export const MainDiv = styled.div`
   grid-template-columns: repeat(2, minmax(50rem, 80rem));
   grid-template-rows: [row1-start] 24vh [row1-end row2-start] 8vh [row2-end row3-start] 5vh [row3-end row4-start] 60vh [row4-end];
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     grid-template-columns: minmax(50rem, 120rem);
     grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 5vh [row4-end row5-start] 42vh [row5-end];
     
@@ -38,6 +38,10 @@ export const PlanetImageContainer = styled.div`
   padding: 0 0 8rem 32%;
 
   @media (max-width: 1200px) {
+    padding: 0 0 8rem 15%;
+  }
+
+  @media (max-width: 1070px) {
     grid-column: 1 / -1;
     grid-row-start: 3;
     grid-row-end: 4;
@@ -51,7 +55,7 @@ export const PlanetImage = styled.img`
   width: 45rem;
   height: 45rem;
   
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       width: 30rem;
       height: 30rem;
       place-self: center;
@@ -68,7 +72,7 @@ export const MenuContainer = styled.div`
   justify-content: center;
   margin: 1rem 10rem 0 0;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     grid-column: 1 / -1; 
     grid-row-start: 4;
     grid-row-end: 5;    
@@ -93,7 +97,7 @@ export const PlanetSelect = styled.h3`
   &:hover {
     border-bottom: ${props => props.isSelected ? '2px solid #ffffff': '2px solid #444444'};
   }
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       
     }
 `;
@@ -106,7 +110,7 @@ export const PlanetInfoContainer = styled.div`
   justify-content: center;
   margin: 0 0 0 2rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     grid-column: 1 / -1;
     grid-row-start: 5;
     grid-row-end: 6;
@@ -119,7 +123,7 @@ export const PageTitleNumberContainer = styled.div`
   grid-row-start: 2;
   grid-row-end: 3;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     grid-column: 1 / -1;
     grid-row-start: 2;
     grid-row-end: 3;

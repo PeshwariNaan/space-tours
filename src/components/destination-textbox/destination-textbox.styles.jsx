@@ -5,7 +5,7 @@ export const PlanetDataContainer = styled.div`
   flex-direction: column;
   width: min-content;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       width: fit-content;
     }
 `;
@@ -17,7 +17,7 @@ export const PlanetTitle = styled.h2`
   color: #ffffff;
   margin: 0 10rem 0 0;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       text-align: center;    
       place-self: center;
       margin: 0 0 0 0;
@@ -32,7 +32,7 @@ export const PlanetBodyText = styled.p`
   font-size: 2rem;
   margin: 0 0 2.5rem 0;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       text-align: center;
       margin: 0 5% 2rem 5%;
     }
@@ -44,7 +44,7 @@ export const PlanetSpecsContainer = styled.div`
   margin: 2.5rem 0 0 0;
   justify-content: flex-start;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       justify-content: space-around;
     }
 `;
@@ -54,7 +54,7 @@ export const ValuesContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       justify-content: center;
     }
 `
@@ -70,7 +70,7 @@ export const SpecsText = styled.h5`
   text-transform: uppercase;
   margin: 0 10rem 0 0;
   
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       place-self: center;
       margin: 0 0 0 0;
     }
@@ -85,7 +85,7 @@ export const SpecValueText = styled.h5`
     margin: 2rem auto 0 0;
    
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       place-self: center;
       margin: 0 0 0 0;
     }
@@ -97,7 +97,7 @@ export const Hrule = styled.hr`
   color: #d0d6f9;
   opacity: 0.3;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1070px) {
       width: 90vw;
     }
 `;
