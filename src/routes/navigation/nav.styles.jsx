@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+
 
 export const NavContainer = styled.div`
   position: fixed;
   margin-top: 8vh;
-  z-index: 900;
+  z-index: 200;
   width: 100%;
   height: 10.5rem;
   display: grid;
@@ -70,12 +70,10 @@ export const HLineContainer = styled.div`
 
 export const LinkContainer = styled.div`
   grid-area: nav;  
-  display: flex;
-  flex-direction: row;
   width: auto;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
-  justify-content: space-between;
+  
 
     @media (max-width: 1200px) {
       justify-self: end;
@@ -89,44 +87,6 @@ export const LinkContainer = styled.div`
   
 `;
 
-export const Link = styled(NavLink)`
-  display: flex;
-  flex-direction: row;
-  flex-shrink: 3;
-  font-family: 'Barlow Condensed';
-  font-size: 1.6rem;
-  letter-spacing: 0.27rem;
-  color: #ffffff;
-  cursor: pointer;
-  text-decoration: none;
-  margin: 4.5rem 0 0 0;
-
-  :first-child {
-    margin-left: 10%;
-  }
-  :last-child {
-    margin-right: 5rem;
-  }
-
-  :hover {
-    border-bottom: 2px solid #444444;
-  }
-  &.active {
-    border-bottom: 2px solid #ffffff;
-  }
-
-  @media(max-width: 1200px){
-    :first-child {
-    margin-left: 1rem;
-  }
-  :last-child {
-    margin-right: 1rem;
-  }
-  font-size: 1.4rem;
-
-  }
-`;
-
 export const CustomHr = styled.hr`
   margin-top: 5.25rem;
   width: 100%;
@@ -134,17 +94,4 @@ export const CustomHr = styled.hr`
   color: rgba(255, 255, 255, 0.25);
 `;
 
-export const TitleNumbers = styled.h5`
-  display: flex;
-  flex-direction: row;
-  font-family: 'Barlow Condensed';
-  font-weight: 700;
-  font-size: 1.6rem;
-  color: #ffffff;
-  margin: 0 1rem 0 0;
 
-    @media(max-width: 1200px) {
-      display: none;
-      width: 0;
-    }
-    `;

@@ -48,21 +48,21 @@ const CrewPage = () => {
           />
           <SmallButton
             onClick={() => {
-              setIndex(0);
+              setIndex(1);
               handleClick('2');
             }}
             isSelected={active === '2' ? true : false}
           />
           <SmallButton
             onClick={() => {
-              setIndex(0);
+              setIndex(2);
               handleClick('3');
             }}
             isSelected={active === '3' ? true : false}
           />
           <SmallButton
             onClick={() => {
-              setIndex(0);
+              setIndex(3);
               handleClick('4');
             }}
             isSelected={active === '4' ? true : false}
