@@ -1,16 +1,18 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const NavList = styled.div`
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-    height: 100%;
-    width: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 100%;
+  width: auto;
 
-    @media (max-width: 500px) {
-        flex-flow: column;
-    }
-`
+  @media (max-width: 500px) {
+    flex-flow: column;
+    justify-content: flex-start;
+    margin: 0 0 0 3rem;
+  }
+`;
 
 export const TitleNumbers = styled.h5`
   display: flex;
@@ -21,8 +23,13 @@ export const TitleNumbers = styled.h5`
   color: #ffffff;
   margin: 0 1rem 0 0;
 
-    @media(max-width: 1200px) {
-      display: none;
-      width: 0;
-    }
-    `;
+  @media (max-width: 1200px) {
+    display: none;
+    
+  }
+
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: row;
+  }
+`;

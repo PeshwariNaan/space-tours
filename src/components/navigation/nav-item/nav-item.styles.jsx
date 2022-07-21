@@ -35,10 +35,25 @@ export const Link = styled(NavLink)`
     }
     font-size: 1.4rem;
   }
+
+  @media (max-width: 500px) {
+    :first-child,
+    :last-child {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    margin-top: 5rem;
+    font-size: 1.6rem;
+
+    :hover,
+    &.active {
+      border-bottom: none;
+    }
+    }
+    
+  
 `;
 
-export const ListItem = styled.li`
 
-`;
 
 

@@ -1,21 +1,30 @@
+import { useState } from 'react';
 import { Fragment } from 'react';
 import { Outlet } from 'react-router-dom';
 import NavItems from '../../components/navigation/nav-items/nav-items.component';
+import SideDrawer from '../../components/side-drawer/side-drawer.component';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
-import { ReactComponent as Burger } from '../../assets/icon-hamburger.svg'
+import { ReactComponent as Burger } from '../../assets/icon-hamburger.svg';
 import {
   HLineContainer,
   CustomHr,
   LinkContainer,
   LogoContainer,
   NavContainer,
-  Link,
-  TitleNumbers,
   HamburgerContainer,
-  
 } from './nav.styles';
 
 const Navbar = () => {
+  const [sideDrawerIsVisible, setSideDrawerIsVisible] = useState(false);
+
+  const ShowDrawerHandler = () => {
+    setSideDrawerIsVisible(true);
+  };
+
+  const CloseDrawerHandler = () => {
+    setSideDrawerIsVisible(false);
+  };
+
   return (
     <Fragment>
       <NavContainer>
@@ -26,20 +35,18 @@ const Navbar = () => {
           <CustomHr />
         </HLineContainer>
         <HamburgerContainer>
-          <Burger />
+          <Burger onClick={ShowDrawerHandler} />
         </HamburgerContainer>
         <LinkContainer>
           <NavItems />
         </LinkContainer>
       </NavContainer>
+      {sideDrawerIsVisible ? (
+        <SideDrawer open={sideDrawerIsVisible} close={!sideDrawerIsVisible} onClick={CloseDrawerHandler} />
+      ) : null}
       <Outlet />
     </Fragment>
   );
 };
 
 export default Navbar;
-
-{/* <Link to={'/'}><TitleNumbers>00</TitleNumbers>HOME</Link>
-<Link to={'/destinations'}><TitleNumbers>01</TitleNumbers>DESTINATIONS</Link>
-<Link to={'/crew'}><TitleNumbers>02</TitleNumbers>CREW</Link>
-<Link to={'/technology'}><TitleNumbers>03</TitleNumbers>TECHNOLOGY</Link> */}

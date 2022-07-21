@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const NavContainer = styled.div`
   position: fixed;
   margin-top: 8vh;
-  z-index: 200;
+  z-index: 100;
   width: 100%;
   height: 10.5rem;
   display: grid;
