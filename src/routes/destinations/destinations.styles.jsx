@@ -123,7 +123,7 @@ export const PageTitleNumberContainer = styled.div`
   grid-row-start: 2;
   grid-row-end: 3;
 
-  @media (max-width: 1070px) {
+  @media (max-width: 1080px) {
     grid-column: 1 / -1;
     grid-row-start: 2;
     grid-row-end: 3;
