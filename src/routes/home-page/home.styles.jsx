@@ -28,7 +28,7 @@ export const HomeContainer = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: [row1-start] 40vh [row1-end row2-start] 60vh [row2-end];
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     grid-template-columns: 1;
     grid-template-rows: [row1-start] 10vh [row1-end row2-start] 50vh [row2- end row3-start] 30vh [row3-end];
   }
@@ -41,7 +41,7 @@ export const TextDiv = styled.div`
   align-content: flex-end; */
   justify-self: center;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     grid-column: 1 / 3;
     grid-row: 2;
     margin-left: 0;
@@ -55,7 +55,7 @@ export const HomeTextDiv = styled.div`
   width: min-content;
   height: 20rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     align-items: center;
   }
 `;
@@ -87,7 +87,7 @@ export const HomeBodyText = styled.p`
   font-size: 2rem;
   margin-top: 0.5rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     text-align: center;
   }
 `;
@@ -97,7 +97,7 @@ export const ButtonDiv = styled.div`
   grid-row: 2;
   place-self: center;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1070px) {
     grid-column: 1 / 3;
     grid-row: 3;
   }
