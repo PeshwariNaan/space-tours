@@ -6,7 +6,7 @@ const SideDrawer = (props) => {
   return (
     <>
       <BackDrop show={props.open} clicked={props.closed} />
-      <SideDrawerContainer onClick={props.closed} open={props.open}>
+      <SideDrawerContainer onClick={props.closed} open={props.open} closed={props.closed}>
         <NavDrawerContainer>
           <NavItems />
         </NavDrawerContainer>

@@ -37,7 +37,7 @@ export const MainDiv = styled.div`
   }
   @media (max-width: 500px) {
     grid-template-columns: minmax(30rem, 50rem);
-    grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 5vh [row4-end row5-start] 42vh [row5-end];
+    grid-template-rows: [row1-start] 12rem [row1-end row2-start] 5rem [row2-end row3-start] 30rem [row3-end row4-start] 5rem [row4-end row5-start] 42rem [row5-end];
     
   }
 `;
@@ -72,6 +72,12 @@ export const PlanetImage = styled.img`
       height: 30rem;
       place-self: center;
     }
+
+    @media (max-width: 500px) {
+      width: 20rem;
+      height: 20rem;
+      
+    }
 `
 
 export const MenuContainer = styled.div`
@@ -89,7 +95,7 @@ export const MenuContainer = styled.div`
     grid-row-start: 4;
     grid-row-end: 5;    
     margin: 0 0 0 0;
-    justify-content: center;
+    
   }
 `;
 
@@ -109,8 +115,8 @@ export const PlanetSelect = styled.h3`
   &:hover {
     border-bottom: ${props => props.isSelected ? '2px solid #ffffff': '2px solid #444444'};
   }
-    @media (max-width: 1070px) {
-      
+    @media (max-width: 500px) {
+      margin: 0 3rem 0 0;
     }
 `;
 
@@ -139,7 +145,7 @@ export const PageTitleNumberContainer = styled.div`
     grid-column: 1 / -1;
     grid-row-start: 2;
     grid-row-end: 3;
-    justify-content: flex-start;
+    
     
   }
   @media (max-width: 500px) {    

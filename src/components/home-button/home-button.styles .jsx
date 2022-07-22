@@ -17,7 +17,7 @@ export const BigRoundButton = styled.button`
     outline: 8rem solid #222222;
   }
 
-  @media screen {
+  @media (max-width: 500px) {
     height: 17rem;
     width: 17rem;
     font-size: 1.5rem;

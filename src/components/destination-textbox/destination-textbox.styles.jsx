@@ -22,6 +22,10 @@ export const PlanetTitle = styled.h2`
       place-self: center;
       margin: 0 0 0 0;
     }
+
+    @media (max-width: 500px) {
+      font-size: 7rem;
+    }
 `;
 
 export const PlanetBodyText = styled.p`

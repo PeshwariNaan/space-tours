@@ -1,25 +1,5 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled from 'styled-components';
 
-const extendNav = keyframes` 
-     from {
-      transform: translateX(100%);
-     
-    }
-    to {
-      transform: translateX(0%);
-      
-    }  
-  `;
-
-const retractNav = keyframes` 
-    from {
-      transform: translateX(0%);
-
-    }
-    to {
-      transform: translateX(-100%); 
-}  
-`;
 
 export const SideDrawerContainer = styled.div`
   position: fixed;
@@ -33,18 +13,8 @@ export const SideDrawerContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(25px);
   box-sizing: border-box;
-  animation: ${(props) =>
-    props.open
-      ? props.closed
-        ? css`
-            ${retractNav} 0.5s ease-out
-          `
-        : css`
-            ${extendNav} 0.5s ease-out
-          `
-      : css`
-            ${retractNav} 0.5s ease-out
-          `};
+  transition: transform 0.5s ease-out;
+  transform: translateX(${props => props.open ? '0' : '100%'});
 
   @media (min-width: 500px) {
     display: none;
