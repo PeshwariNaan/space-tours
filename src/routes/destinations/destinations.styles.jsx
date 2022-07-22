@@ -70,8 +70,7 @@ export const PlanetImage = styled.img`
     @media (max-width: 1070px) {
       width: 30rem;
       height: 30rem;
-      place-self: center;
-    }
+      place-self: center;    }
 
     @media (max-width: 500px) {
       width: 20rem;

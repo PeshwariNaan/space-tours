@@ -11,6 +11,10 @@ export const CrewDataContainer = styled.div`
       justify-content: center;
       align-content: center;
     }
+
+    @media (max-width: 500px) {     
+      align-content: start;
+    }
 `;
 
 export const PositionTitle = styled.h4`
@@ -24,6 +28,12 @@ export const PositionTitle = styled.h4`
       margin: 5% 0 0 0;
       text-align: center;
     }
+
+    @media (max-width: 500px) {
+      margin: 0 0 0 0;
+      font-size: 2.2rem;
+      
+    }
 `;
 
 export const Name = styled.h3`
@@ -36,6 +46,12 @@ export const Name = styled.h3`
   @media (max-width: 1200px) {
       text-align: center;
       margin: 0 0 0 0;
+      font-size: 3.6rem;
+    }
+    @media (max-width: 500px) {
+      font-size: 2.4rem;
+      margin: 1rem 0 0 0;
+      
     }
 `;
 
@@ -53,9 +69,9 @@ export const Description = styled.p`
       place-self: center;
       text-align: center;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 500px) {
       width: 95vw;
-      
+      line-height: 1.5;
     }
 
 `;

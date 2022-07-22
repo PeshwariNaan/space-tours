@@ -3,8 +3,6 @@ import styled from "styled-components";
 export const PageTitleContainer = styled.div`
   display: flex;
   flex-direction: row;
-  
-
   padding: 0 0 0 25%;
 
     @media (max-width: 1200px) {
@@ -35,7 +33,7 @@ export const PageNumber = styled.h1`
   font-family: 'Barlow Condensed';
   font-size: 2.8rem;
   font-weight: 600;
-  color: #333333;
+  color: #808080;
   margin: 0 2rem;
 
   @media (max-width: 500px) {
