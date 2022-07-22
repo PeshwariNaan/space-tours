@@ -16,6 +16,13 @@ export const BodyDiv = styled.div`
       background-size: cover;
       height: 100vh;
   }
+
+  @media (max-width: 375px) {
+    background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446587/space_tours/Destinations/background-destination-mobile_orkqrd.jpg)
+      no-repeat;
+      background-size: cover;
+      height: 100vh;
+  }
 `;
 
 export const MainDiv = styled.div`
@@ -25,6 +32,11 @@ export const MainDiv = styled.div`
 
   @media (max-width: 1070px) {
     grid-template-columns: minmax(50rem, 120rem);
+    grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 5vh [row4-end row5-start] 42vh [row5-end];
+    
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: minmax(30rem, 50rem);
     grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 40vh [row3-end row4-start] 5vh [row4-end row5-start] 42vh [row5-end];
     
   }
@@ -129,5 +141,8 @@ export const PageTitleNumberContainer = styled.div`
     grid-row-end: 3;
     justify-content: flex-start;
     
+  }
+  @media (max-width: 500px) {    
+    justify-content: center;    
   }
 `;

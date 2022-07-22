@@ -5,8 +5,8 @@ import { SideDrawerContainer, NavDrawerContainer } from './side-drawer.styles';
 const SideDrawer = (props) => {
   return (
     <>
-      <BackDrop open={props.open} clicked={props.open} />
-      <SideDrawerContainer open={props.open}>
+      <BackDrop show={props.open} clicked={props.closed} />
+      <SideDrawerContainer onClick={props.closed} open={props.open}>
         <NavDrawerContainer>
           <NavItems />
         </NavDrawerContainer>

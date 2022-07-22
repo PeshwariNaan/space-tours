@@ -42,7 +42,7 @@ const Navbar = () => {
         </LinkContainer>
       </NavContainer>
       {sideDrawerIsVisible ? (
-        <SideDrawer open={sideDrawerIsVisible} close={!sideDrawerIsVisible} onClick={CloseDrawerHandler} />
+        <SideDrawer open={sideDrawerIsVisible} closed={CloseDrawerHandler}  />
       ) : null}
       <Outlet />
     </Fragment>

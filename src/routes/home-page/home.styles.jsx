@@ -101,6 +101,7 @@ export const HomeBodyText = styled.p`
 
   @media (max-width: 1070px) {
     text-align: center;
+    line-height: 1.5;
   }
 `;
 
@@ -114,6 +115,6 @@ export const ButtonDiv = styled.div`
     grid-row: 3;
   }
   @media (max-width: 500px) {
-    margin-top: 10rem;
+    margin-top: auto;
   }
 `;

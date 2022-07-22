@@ -2,7 +2,7 @@ import styled, { keyframes, css } from 'styled-components';
 
 const extendNav = keyframes` 
      from {
-      transform: translateX(300%);
+      transform: translateX(100%);
      
     }
     to {
@@ -12,13 +12,12 @@ const extendNav = keyframes`
   `;
 
 const retractNav = keyframes` 
-from {
- transform: translateX(0%);
+    from {
+      transform: translateX(0%);
 
-}
-to {
- transform: translateX(300%);
- 
+    }
+    to {
+      transform: translateX(-100%); 
 }  
 `;
 
@@ -34,11 +33,18 @@ export const SideDrawerContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(25px);
   box-sizing: border-box;
-  animation: ${props => props.open ?
-  css`
-  ${extendNav} 0.5s ease-out`: 
-  css`
-  ${retractNav} 0.5s ease-in`};
+  animation: ${(props) =>
+    props.open
+      ? props.closed
+        ? css`
+            ${retractNav} 0.5s ease-out
+          `
+        : css`
+            ${extendNav} 0.5s ease-out
+          `
+      : css`
+            ${retractNav} 0.5s ease-out
+          `};
 
   @media (min-width: 500px) {
     display: none;
@@ -58,5 +64,5 @@ export const CloseLogoContainer = styled.div`
 `;
 
 export const NavDrawerContainer = styled.div`
-    grid-row: 2 / 3;
-`
+  grid-row: 2 / 3;
+`;

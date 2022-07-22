@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 
+
 export const NavContainer = styled.div`
   position: fixed;
   margin-top: 8vh;
@@ -51,6 +52,8 @@ export const HamburgerContainer = styled.div`
     background-size: 4rem 5rem;
     padding: 4.5rem 0 0 4rem;
   }
+
+
 
 
 `
