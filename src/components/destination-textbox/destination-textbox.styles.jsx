@@ -51,6 +51,10 @@ export const PlanetSpecsContainer = styled.div`
     @media (max-width: 1070px) {
       justify-content: space-around;
     }
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
 `;
 
 export const ValuesContainer = styled.div`
@@ -61,8 +65,14 @@ export const ValuesContainer = styled.div`
     @media (max-width: 1070px) {
       justify-content: center;
     }
+      
+      @media (max-width: 500px) {
+        :last-child {
+          margin-top: 4rem;
+        }
+      }
 `
-
+;
 
 
 export const SpecsText = styled.h5`
@@ -76,7 +86,7 @@ export const SpecsText = styled.h5`
   
     @media (max-width: 1070px) {
       place-self: center;
-      margin: 0 0 0 0;
+      margin: 0 0 2rem 0;
     }
 `;
 

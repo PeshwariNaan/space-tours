@@ -26,7 +26,7 @@ export const PageTitleText = styled.h5`
   margin: 0;
 
   @media (max-width: 500px) {
-    font-size: 2.0rem;
+    font-size: 2.4rem;
     letter-spacing: 0.275rem;
     }
 `;
@@ -39,6 +39,6 @@ export const PageNumber = styled.h1`
   margin: 0 2rem;
 
   @media (max-width: 500px) {
-    font-size: 2.0rem;    
+    font-size: 2.4rem;    
     }
 `;
