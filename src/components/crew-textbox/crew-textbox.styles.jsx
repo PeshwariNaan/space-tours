@@ -49,7 +49,7 @@ export const Name = styled.h3`
       font-size: 3.6rem;
     }
     @media (max-width: 500px) {
-      font-size: 2.4rem;
+      font-size: 2.8rem;
       margin: 1rem 0 0 0;
       
     }

@@ -34,7 +34,10 @@ export const MainDiv = styled.div`
 
   @media (max-width: 1200px) {
     grid-template-columns: minmax(50rem, 120rem);
-    grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 30vh [row3-end row4-start] 5vh [row4-end row5-start] minmax(60rem, 70rem) [row5-end];
+    grid-template-rows: [row1-start] 10vh [row1-end row2-start] 8vh [row2-end row3-start] 30vh [row3-end row4-start] 5vh [row4-end row5-start] minmax(
+        60rem,
+        70rem
+      ) [row5-end];
   }
 
   @media (max-width: 500px) {
@@ -68,38 +71,39 @@ export const CrewImageContianer = styled.div`
   grid-column: 2 / 3;
   grid-row-start: 3;
   grid-row-end: 5;
-  //padding: 0 5rem 0 30%;
   justify-self: center;
-  align-self: end;
 
   @media (max-width: 1200px) {
     grid-column: 1 / -1;
     grid-row-start: 5;
     grid-row-end: 6;
     padding: 0 0 0 0;
-    align-self: stretch;
   }
   @media (max-width: 500px) {
     grid-column: 1 / -1;
     grid-row-start: 3;
     grid-row-end: 4;
     padding: 2rem 0 0 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin: 0 5%;
   }
 `;
 
 export const CrewImg = styled.img`
-  width: auto;
+  max-width: 100%;
   height: 60rem;
-  margin: 0 0 0 0;  
- 
+  margin: 0 0 0 0;
+
   @media (max-width: 1079px) {
-    width: 45rem;
-    height: 65rem;
+    width: 50rem;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 35rem;
+    max-height: 100%;
     
   }
 `;
@@ -120,11 +124,10 @@ export const CrewMenuContainer = styled.div`
     margin: 1rem 0 0 0;
   }
 
-  @media (max-width: 500px) {    
+  @media (max-width: 500px) {
     margin: 1rem 0 0 0;
     align-items: center;
   }
-
 `;
 
 export const SmallButton = styled.button`

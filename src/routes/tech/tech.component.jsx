@@ -12,6 +12,7 @@ import {
   TextContainer,
   TechButton,
   PageTitleNumberContainer,
+  TechImage,
 } from './tech.styles';
 
 const TechPage = () => {
@@ -74,8 +75,8 @@ const TechPage = () => {
           </ButtonContainer>
         </TechInfoContainer>
         <TechImageContainer>
-          <img
-            src={width > 1200 ? data[index].imgLarge : data[index].imgTablet}
+          <TechImage
+            src={width > 1079 ? data[index].imgLarge : data[index].imgTablet}
             alt={data[0].alt}
           />
         </TechImageContainer>

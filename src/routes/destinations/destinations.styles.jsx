@@ -37,7 +37,7 @@ export const MainDiv = styled.div`
   }
   @media (max-width: 500px) {
     grid-template-columns: minmax(30rem, 50rem);
-    grid-template-rows: [row1-start] 12rem [row1-end row2-start] 5rem [row2-end row3-start] 30rem [row3-end row4-start] 5rem [row4-end row5-start] 42rem [row5-end];
+    grid-template-rows: [row1-start] 10rem [row1-end row2-start] 5rem [row2-end row3-start] 25rem [row3-end row4-start] 4rem [row4-end row5-start] 42rem [row5-end];
     
   }
 `;
@@ -93,8 +93,7 @@ export const MenuContainer = styled.div`
     grid-column: 1 / -1; 
     grid-row-start: 4;
     grid-row-end: 5;    
-    margin: 0 0 0 0;
-    
+    margin: 0 0 0 0;    
   }
 `;
 

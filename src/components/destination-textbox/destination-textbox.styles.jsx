@@ -39,6 +39,7 @@ export const PlanetBodyText = styled.p`
     @media (max-width: 1070px) {
       text-align: center;
       margin: 0 5% 2rem 5%;
+      line-height: 1.5;
     }
 `;
 

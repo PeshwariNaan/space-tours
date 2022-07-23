@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const TechDataContainer = styled.div`
   display: flex;
   flex-direction: column;
-
 `;
 
 export const TitleText = styled.h3`
@@ -14,8 +13,16 @@ export const TitleText = styled.h3`
   margin: 2.5rem 0 0 0;
 
   @media (max-width: 1200px) {
+    margin: 1rem 0 0 0;
+  }
+
+  @media (max-width: 1079px) {
     text-align: center;
-    }
+  }
+
+  @media (max-width: 500px) {
+    font-size: 3.2rem;
+  }
 `;
 
 export const LeadText = styled.p`
@@ -27,8 +34,16 @@ export const LeadText = styled.p`
   margin: 10rem 0 0 0;
 
   @media (max-width: 1200px) {
-      text-align: center;
-    }
+    margin: 2rem 0 0 0;
+  }
+
+  @media (max-width: 1079px) {
+    text-align: center;
+  }
+
+  @media (max-width: 500px) {
+    text-align: center;
+  }
 `;
 
 export const BodyText = styled.p`
@@ -38,8 +53,13 @@ export const BodyText = styled.p`
   color: #d0d6f9;
   font-size: 2rem;
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1079px) {
     text-align: center;
-    
-    }
+  }
+
+  @media (max-width: 500px) {
+    line-height: 1.5;
+    letter-spacing: .12rem;
+    font-size: 1.8rem;
+  }
 `;
