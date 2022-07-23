@@ -40,6 +40,7 @@ export const PlanetBodyText = styled.p`
       text-align: center;
       margin: 0 5% 2rem 5%;
       line-height: 1.5;
+      font-size: 1.75rem;
     }
 `;
 

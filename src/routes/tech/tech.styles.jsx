@@ -72,6 +72,7 @@ export const TextContainer = styled.div`
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     align-content: start;
+    margin: 3rem 0 0 0;
   }
 `;
 
@@ -102,7 +103,7 @@ export const ButtonContainer = styled.div`
     }
 
     @media (max-width: 500px) {
-      margin-top: 1rem;
+      margin: 2rem 0 2rem 0;
     }
   }
 `;

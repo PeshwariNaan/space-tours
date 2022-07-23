@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const SideDrawerContainer = styled.div`
   position: fixed;
   display: grid;
@@ -14,22 +13,29 @@ export const SideDrawerContainer = styled.div`
   backdrop-filter: blur(25px);
   box-sizing: border-box;
   transition: transform 0.5s ease-out;
-  transform: translateX(${props => props.open ? '0' : '100%'});
+  transform: translateX(${(props) => (props.open ? '0' : '100%')});
 
   @media (min-width: 500px) {
     display: none;
   }
 `;
 
+
+
 export const CloseLogoContainer = styled.div`
+  display: grid;
   @media (min-width: 501px) {
     display: none;
   }
   @media (max-width: 500px) {
+    grid-row: 1 / 2;
+    grid-column: 1;
     width: 100%;
     height: 100%;
-    background-size: 4rem 5rem;
-    padding: 4.5rem 0 0 4rem;
+    background-size: 4rem 4rem;
+    align-content: center;
+    justify-content: center;
+    margin: 0 0 0 35%;    
   }
 `;
 
