@@ -23,4 +23,9 @@ export const BigRoundButton = styled.button`
     font-size: 1.5rem;
     letter-spacing: 0.235rem;
   }
+
+  @media (max-height: 500px) {
+    height: 12rem;
+    width: 12rem;
+  }
 `;

@@ -1,100 +1,97 @@
 import styled from 'styled-components';
 
-
-
 export const NavContainer = styled.div`
   position: fixed;
-  margin-top: 8vh;
+  margin-top: 5vh;
   z-index: 100;
   width: 100%;
-  height: 10.5rem;
   display: grid;
-  grid-template-columns: minmax(10rem, 15rem) auto auto;
-  grid-template-areas: 'logo image nav';
+  grid-auto-rows: 10.5rem;
+  grid-template-columns: repeat(20, 1fr);
   background-color: transparent;
 
-   @media (max-width: 1200px) {
-    grid-template-columns: minmax(10rem, 15rem) auto  auto;
-    grid-template-areas: 'logo nav nav';
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(10, 1fr);
     margin-top: 0;
-   }
+  }
 
-   @media (max-width: 500px) {
-    grid-template-columns: minmax(10rem, 15rem) auto minmax(5rem, 10rem);
-    grid-template-areas: 'logo . burger';
-    margin-top: 0;
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(4, auto);
    }
 `;
 
 export const LogoContainer = styled.div`
-  grid-area: logo;
+  display: grid;
+  grid-column: 1 / 3;
+  grid-row: 1;
   height: 100%;
   width: 100px;
-  padding-top: 2.5rem;
+  align-content: center;
+  justify-content: center;
   background-size: 2rem 3rem;
-  justify-self: end;
+  margin: 0 0 0 4rem;
 
-   @media(max-width: 1200px) {
-    padding-left: 1rem;
-   }
+  @media (max-width: 1200px) {
+    grid-column: 1 / 2;
+    margin: 0 0 0 0;
+  }
+
+  @media (max-width: 500px) {
+    grid-column: 1 / 2;
+  }
 `;
 
-
-
 export const HamburgerContainer = styled.div`
-    @media (min-width: 501px){
-      display: none;
-    }
-  @media (max-width: 500px) {    
-    grid-area: burger;
+  display: grid;
+  @media (min-width: 501px) {
+    display: none;
+  }
+  @media (max-width: 500px) {
+    grid-column: 4 / 5;
+    grid-row: 1;
     width: 100%;
     height: 100%;
     background-size: 4rem 5rem;
-    padding: 4.5rem 0 0 4rem;
+    justify-content: center;
+    align-content: center;
   }
-
-
-
-
-`
-
-export const HLineContainer = styled.div`
-  grid-area: image;
-  height: 100%;
-  width: auto;
-  padding-left: 3rem;
-  align-content: center;
-
-   @media(max-width: 1200px) {
-      display: none;
-   }
 `;
 
+export const HLineContainer = styled.div`
+  grid-column: 3 / 10;
+  grid-row: 1;
+  height: 100%;
+  width: auto;
+  padding: 0 3rem 0 0;
+  align-content: center;
+  z-index: 500;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+`;
 
 export const LinkContainer = styled.div`
-  grid-area: nav;  
-  width: auto;
+  grid-column: 9 / 21;
+  grid-row: 1;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
-  
+  margin: 0 0 0 0;
 
-    @media (max-width: 1200px) {
-      justify-self: end;
-      width: 70vw;
-    }
+  @media (max-width: 1200px) {
+    grid-column: 4 / 11;
+  }
 
-    @media (max-width: 500px) {
-      display: none;
-    }
-  
-  
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const CustomHr = styled.hr`
   margin-top: 5.25rem;
+
   width: 100%;
-  border: 2px solid;
-  color: rgba(255, 255, 255, 0.25);
+  border: 1px solid;
+  color: rgba(255, 255, 255, 0.35);
+  z-index: 600;
 `;
-
-

@@ -4,7 +4,7 @@ import { Link } from './nav-item.styles';
 const NavItem = (props) => {
   return (
     <>
-      <Link to={props.link}>{props.children}</Link>
+      <Link to={props.link} onClick={props.clicked}>{props.children}</Link>
     </>
   );
 };
