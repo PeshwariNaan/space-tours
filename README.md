@@ -48,8 +48,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/PeshwariNaan/space-tours.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link to github repo](https://github.com/PeshwariNaan/space-tours.git)
+- Live Site URL: [Link to live site](https://your-live-site-url.com)
 
 ## My process
 
