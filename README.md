@@ -41,8 +41,8 @@ Users should be able to:
 ![Destinations-page](https://res.cloudinary.com/soyousay/image/upload/v1658650664/space_tours/screen-shots/st-destinationspage_ht5uop.png)
 ![Crew-page](https://res.cloudinary.com/soyousay/image/upload/v1658650658/space_tours/screen-shots/st-crewpage_vpwg4y.png)
 ![Technology-page](https://res.cloudinary.com/soyousay/image/upload/v1658650674/space_tours/screen-shots/st-techpage_n6zadd.png)
-![Destinations-mobile view](https://res.cloudinary.com/soyousay/image/upload/v1658650681/space_tours/screen-shots/st-destPage-mobile_csvsgb.png)
-![Side-drawer - Mobile](https://res.cloudinary.com/soyousay/image/upload/v1658650685/space_tours/screen-shots/st-drawer_ykvnia.png)
+![Destinations-mobile view](https://res.cloudinary.com/soyousay/image/upload/v1658655856/space_tours/screen-shots/st-destPage-mobile1_twmwdo.png)
+![Side-drawer - Mobile](https://res.cloudinary.com/soyousay/image/upload/v1658655851/space_tours/screen-shots/st-drawer1_zxfhe4.png)
 
 
 
@@ -60,7 +60,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - React Router 6
-- 
+
 - [React](https://reactjs.org/) - JS library
 - [Styled Components](https://styled-components.com/) - For styles
 
