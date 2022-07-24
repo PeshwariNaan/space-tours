@@ -9,7 +9,7 @@ import DestinationsPage from './routes/destinations/destinations.component';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Navbar />} >
+      <Route path='/{space-tours}' element={<Navbar />} >
         <Route index element={<Home />} />
         <Route path="destinations" element={<DestinationsPage />} />
         <Route path='crew' element={<CrewPage />} />
