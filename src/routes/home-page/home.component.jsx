@@ -14,7 +14,7 @@ import HomeButton from '../../components/home-button/home-button.component';
 const Home = () => {
   const navigate = useNavigate()
   const goToDestinationsHandler = () => {
-    navigate('/destinations')
+    navigate('/space-tours/destinations')
   }
 
   return (
