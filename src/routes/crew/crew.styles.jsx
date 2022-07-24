@@ -20,7 +20,7 @@ export const BodyDiv = styled.div`
   @media (max-width: 500px) {
     background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446652/space_tours/Crew/background-crew-mobile_uefint.jpg)
       no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
     background-size: cover;
     height: 100vh;
     background-position: center center;

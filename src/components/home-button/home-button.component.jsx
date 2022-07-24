@@ -1,8 +1,8 @@
 import { BigRoundButton } from "./home-button.styles "
 
-const HomeButton = ({children, ...otherProps}) => {
+const HomeButton = ({clicked, children, short}) => {
   return (
-    <BigRoundButton {...otherProps}>{children}</BigRoundButton>
+    <BigRoundButton onClick={clicked} short={short}>{children}</BigRoundButton>
   )
 }
 

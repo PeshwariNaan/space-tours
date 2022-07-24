@@ -18,14 +18,11 @@ export const BigRoundButton = styled.button`
   }
 
   @media (max-width: 500px) {
-    height: 17rem;
-    width: 17rem;
-    font-size: 1.5rem;
+    height: ${props => props.short? '12rem': '17rem'};
+    width: ${props => props.short? '12rem': '17rem'};
+    font-size: ${props => props.short? '1.2rem': '1.5rem'};
     letter-spacing: 0.235rem;
   }
 
-  @media (max-height: 500px) {
-    height: 12rem;
-    width: 12rem;
-  }
+ 
 `;

@@ -15,6 +15,7 @@ export const BodyDiv = styled.div`
       no-repeat;
       background-size: cover;
       height: 100vh;
+      overflow-y: scroll;
   }
 
   @media (max-width: 375px) {
@@ -22,6 +23,7 @@ export const BodyDiv = styled.div`
       no-repeat;
       background-size: cover;
       height: 100vh;
+      overflow-y: scroll;
   }
 `;
 

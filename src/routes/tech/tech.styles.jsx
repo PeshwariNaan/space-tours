@@ -11,7 +11,7 @@ export const BodyDiv = styled.div`
   @media (max-width: 1079px) {
     background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446707/space_tours/Technology/background-technology-tablet_ldach7.jpg)
       no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
     background-size: cover;
     height: 100vh;
     background-position: center center;
@@ -20,7 +20,7 @@ export const BodyDiv = styled.div`
   @media (max-width: 375px) {
     background: url(https://res.cloudinary.com/soyousay/image/upload/v1657446707/space_tours/Technology/background-technology-mobile_j95bsp.jpg)
       no-repeat;
-    overflow: hidden;
+    overflow-y: scroll;
     background-size: cover;
     height: 100vh;
     background-position: center center;
@@ -165,13 +165,13 @@ export const TechImage = styled.img`
     max-height: 100%;
     object-fit: contain;
   }
-  @media (max-width: 500px) {  
+  @media (max-width: 500px) {
     max-width: 500px;
-    max-height: 100%;    
+    max-height: 100%;
   }
-  @media (max-width: 375px) {  
+  @media (max-width: 375px) {
     max-width: 375px;
-    max-height: 100%;    
+    max-height: 100%;
   }
 `;
 

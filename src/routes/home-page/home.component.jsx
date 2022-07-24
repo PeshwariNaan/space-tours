@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import useWindowDimensions from '../../hooks/use-window-size/use-window-size';
 import {
   BodyDiv,
   HomeContainer,
@@ -10,12 +12,22 @@ import {
   ButtonDiv,
 } from './home.styles';
 import HomeButton from '../../components/home-button/home-button.component';
+import { useEffect } from 'react';
 
 const Home = () => {
-  const navigate = useNavigate()
+  const [isShort, setIsShort] = useState(false);
+  const navigate = useNavigate();
   const goToDestinationsHandler = () => {
-    navigate('/space-tours/destinations')
-  }
+    navigate('/space-tours/destinations');
+  };
+
+  const { height } = useWindowDimensions();
+
+  useEffect(() => {
+    if (height < 700) {
+      setIsShort(true);
+    }
+  }, [height]);
 
   return (
     <BodyDiv>
@@ -33,7 +45,9 @@ const Home = () => {
           </HomeTextDiv>
         </TextDiv>
         <ButtonDiv>
-          <HomeButton onClick={goToDestinationsHandler}><h2>EXPLORE</h2></HomeButton>
+          <HomeButton clicked={goToDestinationsHandler} short={isShort}>
+            <h2>EXPLORE</h2>
+          </HomeButton>
         </ButtonDiv>
       </HomeContainer>
     </BodyDiv>
