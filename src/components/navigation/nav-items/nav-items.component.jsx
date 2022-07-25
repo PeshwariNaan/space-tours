@@ -6,9 +6,9 @@ const NavItems = (props) => {
   return (
     <NavList >
         <NavItem clicked={props.clicked} link='/space-tours'><TitleNumbers>00</TitleNumbers>HOME</NavItem>
-        <NavItem clicked={props.clicked} link='/space-tours/destinations'><TitleNumbers>01</TitleNumbers>DESTINATIONS</NavItem>
-        <NavItem clicked={props.clicked} link='/space-tours/crew'><TitleNumbers>02</TitleNumbers>CREW</NavItem>
-        <NavItem clicked={props.clicked} link='/space-tours/technology'><TitleNumbers>03</TitleNumbers>TECHNOLOGY</NavItem>
+        <NavItem clicked={props.clicked} link='/space-tours/destinations' ><TitleNumbers>01</TitleNumbers>DESTINATIONS</NavItem>
+        <NavItem clicked={props.clicked} link='/space-tours/crew' ><TitleNumbers>02</TitleNumbers>CREW</NavItem>
+        <NavItem clicked={props.clicked} link='/space-tours/technology' ><TitleNumbers>03</TitleNumbers>TECHNOLOGY</NavItem>
     </NavList>
   )
 }

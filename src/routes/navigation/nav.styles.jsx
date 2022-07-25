@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const NavContainer = styled.div`
-  position: fixed;
-  margin-top: 5vh;
+  position: absolute;
+  margin-top: 3rem;
   z-index: 100;
   width: 100%;
   display: grid;

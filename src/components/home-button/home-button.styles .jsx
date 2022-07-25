@@ -14,7 +14,7 @@ export const BigRoundButton = styled.button`
   text-align: center;
 
   :hover {
-    outline: 8rem solid #222222;
+    outline: 8rem solid rgba(68, 68, 68, .75);
   }
 
   @media (max-width: 500px) {

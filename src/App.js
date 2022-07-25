@@ -9,9 +9,9 @@ import DestinationsPage from './routes/destinations/destinations.component';
 function App() {
   return (
     <Routes>
-      <Route path='/space-tours' element={<Navbar />} >
-        <Route index element={<Home />} />
-        <Route path="destinations" element={<DestinationsPage />} />
+      <Route exact path='/space-tours' element={<Navbar />} >
+        <Route exact index element={<Home />} />
+        <Route path='destinations' element={<DestinationsPage />} />
         <Route path='crew' element={<CrewPage />} />
         <Route path='technology' element={<TechPage />} />
       </Route>      

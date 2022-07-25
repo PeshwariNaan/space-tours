@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 export const Link = styled(NavLink)`
   display: flex;
   flex-direction: row;
-  flex-shrink: 3;
   font-family: 'Barlow Condensed';
   font-size: 1.6rem;
   letter-spacing: 0.27rem;
@@ -12,6 +11,16 @@ export const Link = styled(NavLink)`
   cursor: pointer;
   text-decoration: none;
   margin: 4.5rem 0 0 0;
+
+  :hover {
+    border-bottom: 2px solid #808080;
+  }
+  
+  &.active,
+  :focus
+    {
+    border-bottom: 2px solid #ffffff;
+  }
   :first-child {
     margin-left: 10%;
   }
@@ -19,12 +28,6 @@ export const Link = styled(NavLink)`
     margin-right: 5rem;
   }
 
-  :hover {
-    border-bottom: 2px solid #444444;
-  }
-  &.active {
-    border-bottom: 2px solid #ffffff;
-  }
 
   @media (max-width: 1200px) {
     :first-child {
@@ -49,11 +52,5 @@ export const Link = styled(NavLink)`
     &.active {
       border-bottom: none;
     }
-    }
-    
-  
+  }
 `;
-
-
-
-
