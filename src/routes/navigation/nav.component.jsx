@@ -28,8 +28,8 @@ const Navbar = () => {
   return (
     <Fragment>
       <NavContainer>
-        <LogoContainer to={'/space-tours'}>
-          <Logo />
+        <LogoContainer >
+          <Logo/>
         </LogoContainer>
         <HLineContainer>
           <CustomHr />

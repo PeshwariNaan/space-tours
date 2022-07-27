@@ -4,7 +4,7 @@ import { Link } from './nav-item.styles';
 const NavItem = (props) => {
   return (
     <>
-      <Link exact to={props.link} onClick={props.clicked}>{props.children}</Link>
+      <Link  to={props.link} exact='true' onClick={props.clicked}>{props.children}</Link>
     </>
   );
 };
