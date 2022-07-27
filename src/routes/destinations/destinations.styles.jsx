@@ -86,7 +86,7 @@ export const MenuContainer = styled.div`
   justify-self: center;
   justify-content: center;
   margin: 1rem 10rem 0 0;
-
+  width: 25vw;
   @media (max-width: 1070px) {
     grid-column: 1 / -1;
     grid-row-start: 4;
