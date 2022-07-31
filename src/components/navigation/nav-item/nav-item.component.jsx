@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from './nav-item.styles';
 
-//const activeLink = { borderColor: '#ffffff', color: '#ffffff' };
 const NavItem = (props) => {
   return (
     <>

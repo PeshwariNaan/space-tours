@@ -3,7 +3,8 @@ import styled from 'styled-components';
 export const PlanetDataContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 25vw;
+  width: min-content;
+  
   @media (max-width: 1070px) {
     width: fit-content;
   }
