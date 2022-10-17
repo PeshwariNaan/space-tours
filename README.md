@@ -48,8 +48,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Link to github repo](https://github.com/PeshwariNaan/frontend-mentor-preview-card.git)
-- Live Site URL: [Link to live site](https://peshwarinaan.github.io/frontend-mentor-preview-card/)
+- Solution URL: [Link to github repo](https://github.com/PeshwariNaan/space-tours.git)
+- Live Site URL: [Link to live site](https://peshwarinaan.github.io/space-tours/)
 
 ## My process
 
