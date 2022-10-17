@@ -61,11 +61,11 @@ export const Description = styled.p`
   letter-spacing: 0.18rem;
   color: #d0d6f9;
   font-size: 2rem;
-  margin: 2.5rem 0 0 0;
+  margin: 2.5rem 0 1rem 0;
   width: 30vw;
 
   @media (max-width: 1200px) {
-      width: 75vw;
+      width: 90vw;
       place-self: center;
       text-align: center;
     }
